@@ -1,4 +1,5 @@
 import java.nio.charset.StandardCharsets;
+import java.util.Arrays;
 
 public class Lesson1 {
 
@@ -69,14 +70,51 @@ public class Lesson1 {
 
     }
 
+    /*
+    In this method we add wrapper to float data type and check if the argument passed is infinitely large in magnitude.
+    */
     public static void wrapperFloat () {
         float inputFloat = 51;
        boolean transformFloat = Float.isInfinite(inputFloat);
         System.out.println("Infinity value for isInfinite() method is: " + transformFloat);
     }
 
+    public static void simpleArray () {
+       // int[] inputArray = new int[4];
+        String[] newArray = {"1", "2", "3"};
+
+        // checking if digit 4 present in array
+        boolean ifPresent4 = Arrays.asList(newArray).contains("4");
+        System.out.println(ifPresent4);
+
+        // reverse array
+
+    }
+
+
+
+
+    public static void twoDimArray (String[] args) {
+        int[][] arrayOne = new int[3][3];
+        arrayOne[0][0] = 1;
+        arrayOne[0][1] = 2;
+        arrayOne[1][0] = 3;
+        arrayOne[1][1] = 4;
+        arrayOne[2][0] = 5;
+        arrayOne[2][1] = 6;
+        arrayOne[0][2] = 7;
+        arrayOne[1][2] = 8;
+        arrayOne[2][2] = 9;
+
+        int[][] oneMoreArray = {{1,2,3}, {4, 5,6}, {7, 8, 9}}
+
+
+
+    }
+
+
     public static void main(String[] args) {
-        wrapperFloat();
+        simpleArray();
     }
 
 }
