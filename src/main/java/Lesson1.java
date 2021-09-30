@@ -13,6 +13,18 @@ public class Lesson1 {
         int inputInteger = 10;
         int transformInt = Integer.compare(inputInteger, 11);
         System.out.println(transformInt);
+
+        /*
+        In this method we add wrapper to integer data type and sum provided and having integers.
+        */
+        int transformInt2 = Integer.sum(5, inputInteger);
+        System.out.println(transformInt2);
+
+        /*
+        In this method we add wrapper to integer data type and comparing it to provided number.
+        */
+        int transformInt3 = Integer.max(inputInteger, 11);
+        System.out.println(transformInt3);
     }
 
     /*
@@ -22,6 +34,12 @@ public class Lesson1 {
         char inputChar = 'l';
         char transformChar = Character.toUpperCase(inputChar);
         System.out.println(transformChar);
+
+        /*
+        In this method we add wrapper to char and checking if provided char space.
+        */
+        boolean transformChar2 = Character.isSpaceChar(inputChar);
+        System.out.println(transformChar2);
 
     }
 
@@ -123,7 +141,7 @@ public class Lesson1 {
 
 
     public static void main(String[] args) {
-        twoDimArray();
+        wrapperChar();
     }
 
 }
