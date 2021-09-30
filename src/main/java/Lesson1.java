@@ -1,10 +1,13 @@
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Lesson1 {
 
     /*
-    In this method we add wrapper to integer data type and compering input value with 11 number.
+    In this method we add wrapper to integer data type and comparing input value with 11 number.
      */
     public static void wrapperInt () {
         int inputInteger = 10;
@@ -80,21 +83,26 @@ public class Lesson1 {
     }
 
     public static void simpleArray () {
-       // int[] inputArray = new int[4];
         String[] newArray = {"1", "2", "3"};
 
         // checking if digit 4 present in array
         boolean ifPresent4 = Arrays.asList(newArray).contains("4");
         System.out.println(ifPresent4);
 
-        // reverse array
+        // Create an ArrayList from an array
+        ArrayList<String> arrayList = new ArrayList<String>(Arrays.asList(newArray));
+        System.out.println(arrayList);
+
+        //Convert an array to a set
+        Set<String> set = new HashSet<>(Arrays.asList(newArray));
+        System.out.println(set);
 
     }
 
 
 
 
-    public static void twoDimArray (String[] args) {
+    public static void twoDimArray () {
         int[][] arrayOne = new int[3][3];
         arrayOne[0][0] = 1;
         arrayOne[0][1] = 2;
@@ -106,7 +114,8 @@ public class Lesson1 {
         arrayOne[1][2] = 8;
         arrayOne[2][2] = 9;
 
-        int[][] oneMoreArray = {{1,2,3}, {4, 5,6}, {7, 8, 9}}
+        int[][] oneMoreArray = {{1,2,3}, {4, 5,6}, {7, 8, 9}};
+        System.out.println("On position [1][1] = " + oneMoreArray[1][1]);
 
 
 
@@ -114,7 +123,7 @@ public class Lesson1 {
 
 
     public static void main(String[] args) {
-        simpleArray();
+        twoDimArray();
     }
 
 }
