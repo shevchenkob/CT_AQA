@@ -6,11 +6,13 @@ import java.util.Set;
 
 public class Lesson1 {
 
-    /*
-    In this method we add wrapper to integer data type and comparing input value with 11 number.
-     */
+
     public static void wrapperInt () {
         int inputInteger = 10;
+
+        /*
+        In this method we add wrapper to integer data type and comparing input value with 11 number.
+        */
         int transformInt = Integer.compare(inputInteger, 11);
         System.out.println(transformInt);
 
@@ -27,11 +29,12 @@ public class Lesson1 {
         System.out.println(transformInt3);
     }
 
-    /*
-    In this method we add wrapper to char and changing input value to uppercase.
-    */
+
     public static void wrapperChar () {
         char inputChar = 'l';
+        /*
+        In this method we add wrapper to char and changing input value to uppercase.
+        */
         char transformChar = Character.toUpperCase(inputChar);
         System.out.println(transformChar);
 
@@ -43,31 +46,36 @@ public class Lesson1 {
 
     }
 
-    /*
-    In method below we add wrapper to short data type and getting 3-rd char after transforming to string type.
-     */
+
     public static void wrapperShort () {
         short inputShort = 12354;
+
+        /*
+        In method below we add wrapper to short data type and getting 3-rd char after transforming to string type.
+        */
         char transformedShort = Short.toString(inputShort).charAt(2);
         System.out.println(transformedShort);
 
     }
 
-    /*
-    In this method we add wrapper to long data type and replaising digit 3 to "a" symbol after converting to string.
-    */
     public static void wrapperLong () {
         long inputLong = 1236534665;
+
+        /*
+        In this method we add wrapper to long data type and replaising digit 3 to "a" symbol after converting to string.
+        */
         String transformLong = Long.toString(inputLong).replace('3', 'a');
         System.out.println(transformLong);
 
     }
 
-    /*
-    In this method we add wrapper to byte data type and after converting to string get first position of digit.
-    */
+
     public static void wrapperByte () {
         byte inputByte = 21;
+
+        /*
+        In this method we add wrapper to byte data type and after converting to string get first position of digit.
+        */
         String transformByte = Byte.toString(inputByte);
         System.out.println(transformByte.charAt(0));
     }
