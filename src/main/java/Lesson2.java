@@ -60,12 +60,19 @@ public class Lesson2 {
         }
     }
 
-
-
+    public static void whileLoopSecond () {
+        int i = 5;
+        int a = 4;
+        while (i < 10 || a < 10){
+        System.out.println("i= " + i + "  a= " + a);
+        i++;
+        a++;
+        }
+    }
 
 
     public static void main(String[] args){
-        modulusAndOther();
+        whileLoopSecond();
     }
 
 }
