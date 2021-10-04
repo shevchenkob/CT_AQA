@@ -1,4 +1,5 @@
 import java.util.Calendar;
+import java.util.EnumMap;
 
 public class Lesson2 {
     public static void modulusAndOther(){
@@ -141,9 +142,19 @@ public class Lesson2 {
        }
     }
 
+    public static void multipleParams(int number, String word, char sign, boolean myBolean, short myShort, String[] myArray){
+        System.out.println("My number is: " + number);
+        System.out.println("My string is: " + word);
+        System.out.println("My char is: " + sign);
+        System.out.println("My boolean is: " + myBolean);
+        System.out.println("My short numb is: " + myShort);
+        System.out.println("My array is: " + myArray);
+
+    }
+
 
     public static void main(String[] args){
-        switchMathod();
+        multipleParams(1, "lalala", 'a', true, (short) 20, new String[]{"A", "B", "C"});
     }
 
 }
