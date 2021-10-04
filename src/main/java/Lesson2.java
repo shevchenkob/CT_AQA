@@ -1,3 +1,5 @@
+import java.util.Calendar;
+
 public class Lesson2 {
     public static void modulusAndOther(){
         int num1,num2,result;
@@ -89,17 +91,59 @@ public class Lesson2 {
         int f = 12;
         if (f == 12 | f > 10);
 
-        /* It will check if i == 12, it does, so it stops checking and executes what is in the if statement */
-        int f = 12;
-        if (f == 12 || f > 10);
+        /* It will check if g == 12, it does, so it stops checking and executes what is in the if statement */
+        int g = 12;
+        if (g == 12 || g > 10);
 
 
 
     }
 
+    public static void switchMathod () {
+       int getMonth =  Calendar.getInstance().get(Calendar.MONTH);
+       switch (getMonth) {
+           case 1:
+               System.out.println("January");
+               break;
+           case 2:
+               System.out.println("February");
+               break;
+           case 3:
+               System.out.println("March");
+               break;
+           case 4:
+               System.out.println("April");
+               break;
+           case 5:
+               System.out.println("May");
+               break;
+           case 6:
+               System.out.println("June");
+               break;
+           case 7:
+               System.out.println("July");
+               break;
+           case 8:
+               System.out.println("August");
+               break;
+           case 9:
+               System.out.println("September");
+               break;
+           case 10:
+               System.out.println("October");
+               break;
+           case 11:
+               System.out.println("November");
+               break;
+           case 12:
+               System.out.println("December");
+               break;
+       }
+    }
+
 
     public static void main(String[] args){
-        whileLoopSecond();
+        switchMathod();
     }
 
 }
