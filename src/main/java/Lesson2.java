@@ -64,10 +64,37 @@ public class Lesson2 {
         int i = 5;
         int a = 4;
         while (i < 10 || a < 10){
-        System.out.println("i= " + i + "  a= " + a);
+        System.out.println("Operator || result:" + "i= " + i + "  a= " + a);
         i++;
         a++;
         }
+
+        int b = 5;
+        int c = 4;
+        while (b < 10 && c < 10){
+            System.out.println("Operator && result:" + "b= " + b + "  c= " + c);
+            b++;
+            c++;
+        }
+
+        /* It will check if d == 10 and if d < 9 */
+        int d = 12;
+        if (d == 10 & d < 9);
+
+        /*  It will check if e == 10 and stop checking afterward because e != 10 */
+        int e = 12;
+        if (e == 10 && e < 9);
+
+        /* It will check if f == 12 and it will check if f > 10 */
+        int f = 12;
+        if (f == 12 | f > 10);
+
+        /* It will check if i == 12, it does, so it stops checking and executes what is in the if statement */
+        int f = 12;
+        if (f == 12 || f > 10);
+
+
+
     }
 
 
