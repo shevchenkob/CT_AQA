@@ -1,3 +1,5 @@
+package com.customertimes.Lesson1;
+
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
