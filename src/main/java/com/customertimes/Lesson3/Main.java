@@ -17,7 +17,7 @@ public class Main {
 
     public static void main(String[] args) {
         // Create an object of class Main (This will call the constructor)
-        Main myObj = new  Main(1, 's', "some text", true);
+        Main myObj = new Main(1, 's', "some text", true);
         System.out.println("Values of my params: " + myObj.someObject + ", " + myObj.someChar+", "+myObj.someString+", "+myObj.someBoolean);
 
     }
