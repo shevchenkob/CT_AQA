@@ -3,8 +3,8 @@ package com.customertimes.Lesson3.MyEnum;
 public class Calculator {
 
     public static double calculate
-            (EnumCalculator operation, double i, double... number) {
-        for (double digits : number) {
+            (EnumCalculator operation, double i, double... j) {
+        for (double digits : j) {
             switch (operation) {
                 case PLUSoperation:
                     return (i + digits);
