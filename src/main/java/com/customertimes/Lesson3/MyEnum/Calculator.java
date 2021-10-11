@@ -3,28 +3,27 @@ package com.customertimes.Lesson3.MyEnum;
 public class Calculator {
 
     public static int calculate
-            (EnumCalculator operation, double start, double... number) {
-        double result = start;
+            (EnumCalculator operation, double i, double... number) {
         for (double digits : number) {
             switch (operation) {
                 case PLUSoperation:
-                    return (int) (result + digits);
+                    return (int) (i + digits);
                 case MINUSoperation:
-                    return (int) (result - digits);
+                    return (int) (i - digits);
                 case TIMESoperation:
-                    return (int) (result * digits);
+                    return (int) (i * digits);
                 case DIVISIONoperation:
-                    return (int) (result / digits);
+                    return (int) (i / digits);
                 default:
                     System.out.println("Wrong operator.");
 
             }
         }
-        return (int) result;
+        return (int) i;
     }
 
     public static void main(String[] args) {
-        System.out.println(calculate(EnumCalculator.MINUSoperation, 3, 4));
+        System.out.println(calculate(EnumCalculator.PLUSoperation, 3, 4, 5));
     }
 }
 
