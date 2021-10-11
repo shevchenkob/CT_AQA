@@ -14,8 +14,6 @@ public class Calculator {
                     return (i * digits);
                 case DIVISIONoperation:
                     return (i / digits);
-                default:
-                    System.out.println("Wrong operator.");
 
             }
         }
