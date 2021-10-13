@@ -3,11 +3,11 @@ package com.customertimes.Lesson3.MyEnum;
 public class Calculator {
 
     public static void main(String[] args) {
-        System.out.println(calculate(EnumCalculator.DIVISION, 3, 0, 5));
+        System.out.println(calculate(EnumCalculator.PLUS, 3, 0, 5));
     }
 
     public static double calculate
-            (EnumCalculator operation, int i, int... j) {
+            (EnumCalculator operation, int i, int[] j) {
         for (double digits : j) {
             switch (operation) {
                 case PLUS:
