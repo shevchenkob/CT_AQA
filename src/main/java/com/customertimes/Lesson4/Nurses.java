@@ -10,6 +10,11 @@ public class Nurses extends  Ambulance_Personal{
         this.category = category;
     }
 
+    Nurses(long id, int dateOfBirth, String name, String squad) {
+        super(id, dateOfBirth, name, squad);
+
+    }
+
     @Override
     public void work() {
         System.out.println("I work with injector");

@@ -24,7 +24,7 @@ public class Runner {
         Pharmacist pharmacist = new Pharmacist(37, 1988, "Sara", "giveAway", "aspirin");
         pharmacist.work();
 
-        Personal newNurse = new Nurses(22, 2001, "Megan", "intensiveCare", NurseEnum.FIRST_CATEGORY);
+        Personal newNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         System.out.println(newNurse.name);
     }
 }
