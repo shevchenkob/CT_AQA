@@ -1,9 +1,16 @@
 package com.customertimes.Lesson2;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.EnumMap;
+import java.util.List;
 
 public class Lesson2 {
+
+    public static void main(String[] args) {
+        multipleParams(1, "lalala", 'a', true, (short) 20, new String[]{"A", "B", "C"});
+    }
+
     public static void modulusAndOther() {
         int num1, num2, result;
         num1 = 36;
@@ -150,13 +157,12 @@ public class Lesson2 {
         System.out.println("My char is: " + sign);
         System.out.println("My boolean is: " + myBolean);
         System.out.println("My short numb is: " + myShort);
-        System.out.println("My array is: " + myArray);
+        //System.out.println("My array is: " + Arrays.toString(myArray));
+        List<String> arrayList = Arrays.asList(myArray);
+        System.out.println("My array is: " + arrayList);
 
     }
 
 
-    public static void main(String[] args) {
-        multipleParams(1, "lalala", 'a', true, (short) 20, new String[]{"A", "B", "C"});
-    }
 
 }

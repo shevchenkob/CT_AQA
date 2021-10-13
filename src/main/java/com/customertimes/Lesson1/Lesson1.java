@@ -8,8 +8,11 @@ import java.util.Set;
 
 public class Lesson1 {
 
+    public static void main(String[] args) {
+        simpleArray();
+    }
 
-    public static void wrapperInt () {
+    public static void wrapperInt() {
         int inputInteger = 10;
 
         /*
@@ -31,8 +34,7 @@ public class Lesson1 {
         System.out.println(transformInt3);
     }
 
-
-    public static void wrapperChar () {
+    public static void wrapperChar() {
         char inputChar = 'l';
         /*
         In this method we add wrapper to char and changing input value to uppercase.
@@ -48,8 +50,7 @@ public class Lesson1 {
 
     }
 
-
-    public static void wrapperShort () {
+    public static void wrapperShort() {
         short inputShort = 12354;
 
         /*
@@ -60,7 +61,7 @@ public class Lesson1 {
 
     }
 
-    public static void wrapperLong () {
+    public static void wrapperLong() {
         long inputLong = 1236534665;
 
         /*
@@ -71,8 +72,7 @@ public class Lesson1 {
 
     }
 
-
-    public static void wrapperByte () {
+    public static void wrapperByte() {
         byte inputByte = 21;
 
         /*
@@ -85,16 +85,16 @@ public class Lesson1 {
     /*
     In this method we add wrapper to boolean data type and applying logicalOr methot that return true if either of the bool value is true.
     */
-    public static void wrapperBoolean () {
+    public static void wrapperBoolean() {
         boolean inputBoolean = true;
-       boolean transformBoolean = Boolean.logicalOr(inputBoolean, false);
+        boolean transformBoolean = Boolean.logicalOr(inputBoolean, false);
         System.out.println(transformBoolean);
     }
 
     /*
     In this method we add wrapper to double data type and comparing two values with each other.
     */
-    public static void wrapperDouble () {
+    public static void wrapperDouble() {
         double inputDouble = 33.3;
         int transformDouble = Double.compare(inputDouble, 3.33);
         System.out.println(transformDouble);
@@ -104,13 +104,13 @@ public class Lesson1 {
     /*
     In this method we add wrapper to float data type and check if the argument passed is infinitely large in magnitude.
     */
-    public static void wrapperFloat () {
+    public static void wrapperFloat() {
         float inputFloat = 51;
-       boolean transformFloat = Float.isInfinite(inputFloat);
+        boolean transformFloat = Float.isInfinite(inputFloat);
         System.out.println("Infinity value for isInfinite() method is: " + transformFloat);
     }
 
-    public static void simpleArray () {
+    public static void simpleArray() {
         String[] newArray = {"1", "2", "3"};
 
         // checking if digit 4 present in array
@@ -128,9 +128,7 @@ public class Lesson1 {
     }
 
 
-
-
-    public static void twoDimArray () {
+    public static void twoDimArray() {
         int[][] arrayOne = new int[3][3];
         arrayOne[0][0] = 1;
         arrayOne[0][1] = 2;
@@ -142,16 +140,9 @@ public class Lesson1 {
         arrayOne[1][2] = 8;
         arrayOne[2][2] = 9;
 
-        int[][] oneMoreArray = {{1,2,3}, {4, 5,6}, {7, 8, 9}};
+        int[][] oneMoreArray = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         System.out.println("On position [1][1] = " + oneMoreArray[1][1]);
 
 
-
     }
-
-
-    public static void main(String[] args) {
-        simpleArray();
-    }
-
 }
