@@ -20,5 +20,8 @@ public class Runner {
 
         Pharmacist pharmacist = new Pharmacist();
         pharmacist.work();
+
+        Personal newNurse = new Nurses();
+        System.out.println(newNurse.name);
     }
 }

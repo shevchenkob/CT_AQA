@@ -6,4 +6,8 @@ public abstract class Doctors extends Ambulance_Personal {
     private int pricePerVisit;
 
 
+    Doctors(long id, int dateOfBirth, String name, String squad, int pricePerVisit) {
+        super(id, dateOfBirth, name, squad);
+        this.pricePerVisit = pricePerVisit;
+    }
 }
