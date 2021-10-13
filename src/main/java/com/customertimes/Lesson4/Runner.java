@@ -32,5 +32,8 @@ public class Runner {
 
         Personal newNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         System.out.println("New nurse name is: " + newNurse.name);
+
+        /* Why here present category with null value? */
+        System.out.println(newNurse.toString());
     }
 }

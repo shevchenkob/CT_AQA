@@ -16,6 +16,12 @@ public class Nurses extends  Ambulance_Personal{
     }
 
     @Override
+    public String toString(){
+        String result = "Id = " + id + ". Birthdate = " + dateOfBirth + ". Name is: " + name + ". Squad: " + squad + ". Category: " + category;
+        return result;
+    };
+
+    @Override
     public void work() {
         System.out.println("I work with injector");
     }
