@@ -1,7 +1,9 @@
 package com.customertimes.Lesson4;
 
+import com.customertimes.Lesson4.PersonalsEnums.NurseEnum;
+
 public class Nurses extends  Hospital_Personal{
-    public int pricePerProcedure;
+    NurseEnum category;
 
     @Override
     public void work() {

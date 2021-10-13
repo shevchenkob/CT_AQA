@@ -4,7 +4,7 @@ import com.customertimes.Lesson4.PersonalsEnums.DoctorsEnum;
 
 public class Surgeon extends Doctors{
 
-    DoctorsEnum currentRank = DoctorsEnum.FIRST_RANK;
+    DoctorsEnum rank;
 
     @Override
     public void work() {

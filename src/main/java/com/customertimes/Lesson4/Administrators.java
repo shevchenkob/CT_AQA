@@ -5,6 +5,6 @@ public class Administrators extends Hospital_Personal {
 
     @Override
     public void work() {
-        System.out.println("I work with tables");
+        System.out.println("I work with schedule");
     }
 }
