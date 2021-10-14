@@ -2,9 +2,9 @@ package com.customertimes.Lesson4;
 
 import com.customertimes.Lesson4.PersonalsEnums.DoctorsEnum;
 
-public class Therapist extends Doctors{
+public class Therapist extends Doctors {
 
-    DoctorsEnum rankTherap;
+    public DoctorsEnum rankTherap;
 
     Therapist(long id, int dateOfBirth, String name, String squad, int pricePerVisit, DoctorsEnum rankTherap) {
         super(id, dateOfBirth, name, squad, pricePerVisit);

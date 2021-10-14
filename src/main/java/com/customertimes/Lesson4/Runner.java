@@ -30,9 +30,19 @@ public class Runner {
         pharmacist.work();
         System.out.println("Pharmacist department is: " + pharmacist.department);
 
+        /* Mixed using polymorphism */
         Personal newNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         System.out.println("New nurse name is: " + newNurse.name);
 
+        Hospital_Personal  newAccountant = new Accountant(6, 1888, "Elizabet", "newDep", "newStamp");
+        accountant.work();
+        System.out.println("New accountant birthday: " + newAccountant.dateOfBirth);
+
         System.out.println(newNurse.toString());
+
+        accountant.setStamp("myStamp");
+        accountant.getStamp();
+
+
     }
 }

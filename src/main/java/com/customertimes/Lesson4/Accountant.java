@@ -13,4 +13,14 @@ public class Accountant extends Hospital_Personal {
     public void work() {
         System.out.println("I work with money");
     }
+
+    /* Getter */
+    public String getStamp(){
+        return stamp;
+    }
+
+    /* Setter */
+    public void setStamp(String newStamp){
+        this.stamp = newStamp;
+    }
 }

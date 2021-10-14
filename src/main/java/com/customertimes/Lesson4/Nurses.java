@@ -2,8 +2,8 @@ package com.customertimes.Lesson4;
 
 import com.customertimes.Lesson4.PersonalsEnums.NurseEnum;
 
-public class Nurses extends  Ambulance_Personal{
-    NurseEnum category;
+public class Nurses extends Ambulance_Personal {
+    public NurseEnum category;
 
     Nurses(long id, int dateOfBirth, String name, String squad, NurseEnum category) {
         super(id, dateOfBirth, name, squad);
@@ -16,10 +16,12 @@ public class Nurses extends  Ambulance_Personal{
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         String result = "Id = " + id + ". Birthdate = " + dateOfBirth + ". Name is: " + name + ". Squad: " + squad + ". Category: " + category;
         return result;
-    };
+    }
+
+    ;
 
     @Override
     public void work() {

@@ -13,4 +13,8 @@ public abstract class Personal {
     }
 
     public abstract void work();
+
+    public static void realNotAbstractWork (String...args) {
+        System.out.println("I am not abstract method!");
+    }
 }
