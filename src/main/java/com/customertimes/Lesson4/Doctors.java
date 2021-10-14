@@ -14,4 +14,12 @@ public abstract class Doctors extends Ambulance_Personal {
         super(id, dateOfBirth, name, squad);
         this.pricePerVisit = pricePerVisit;
     }
+
+    public int getPricePerVisit() {
+        return pricePerVisit;
+    }
+
+    public void setPricePerVisit(int pricePerVisit) {
+        this.pricePerVisit = pricePerVisit;
+    }
 }
