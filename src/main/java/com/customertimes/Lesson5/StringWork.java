@@ -25,6 +25,7 @@ public class StringWork {
         System.out.println(myReplace);
 
         String[] mySplit = mySubstring.split(" ");
+        /* To show every word from new row. */
         for (String splitNewRow : mySplit) {
             System.out.println(splitNewRow);
         }
