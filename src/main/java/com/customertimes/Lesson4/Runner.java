@@ -1,20 +1,20 @@
 package com.customertimes.Lesson4;
 
-import com.customertimes.Lesson4.PersonalsEnums.DoctorsEnum;
-import com.customertimes.Lesson4.PersonalsEnums.NurseEnum;
+import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
+import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 
 public class Runner {
 
     public static void main(String... args) {
-        Surgeon surgeon = new Surgeon(10, 1980, "Ivan", "emergency", 50, DoctorsEnum.FIRST_RANK);
+        Surgeon surgeon = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
         surgeon.work();
         System.out.println("Surgeon name is: " + surgeon.name);
 
-        Therapist therapist = new Therapist(15, 1975, "Vasya", "usual", 40, DoctorsEnum.HIGHEST_RANK);
+        Therapist therapist = new Therapist(15, 1975, "Vasya", "usual", 40, doctors_enum.HIGHEST_RANK);
         therapist.work();
         System.out.println("Therapist rank is: " + therapist.rankTherap);
 
-        Nurses nurses = new Nurses(8, 1995, "Kate", "profilact", NurseEnum.SECOND_CATEGORY);
+        Nurses nurses = new Nurses(8, 1995, "Kate", "profilact", nurse_enum.SECOND_CATEGORY);
         nurses.work();
         System.out.println("Nurse squad is: " + nurses.squad);
 

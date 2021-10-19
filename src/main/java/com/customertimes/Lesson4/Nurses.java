@@ -1,11 +1,11 @@
 package com.customertimes.Lesson4;
 
-import com.customertimes.Lesson4.PersonalsEnums.NurseEnum;
+import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 
 public class Nurses extends Ambulance_Personal {
-    public NurseEnum category;
+    public nurse_enum category;
 
-    Nurses(long id, int dateOfBirth, String name, String squad, NurseEnum category) {
+    Nurses(long id, int dateOfBirth, String name, String squad, nurse_enum category) {
         super(id, dateOfBirth, name, squad);
         this.category = category;
     }
