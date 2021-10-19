@@ -1,7 +1,5 @@
 package com.customertimes.Lesson5;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Arrays;
 
 public class StringWork {
@@ -31,5 +29,21 @@ public class StringWork {
         }
 
         System.out.println(Arrays.toString(mySplit));
+
+        /* Stringbuffer */
+        long startAction = System.currentTimeMillis();
+        StringBuffer myStrBuff = new StringBuffer("Text to make action ");
+        for (int i = 0; i < 1000; i++) {
+            myStrBuff.append("plus this text");
+        }
+        System.out.println("Time to stringbuffer: " + (System.currentTimeMillis() - startAction));
+
+        long newStartAction = System.currentTimeMillis();
+        StringBuilder myStringBuil = new StringBuilder("New text to make action ");
+        for (int i = 0; i < 1000; i++) {
+            myStringBuil.append("plus this new text");
+        }
+        System.out.println("Time to stringbuilder: " + (System.currentTimeMillis() - startAction));
+
     }
 }
