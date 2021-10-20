@@ -34,7 +34,7 @@ public class Runner {
         Personal newNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         System.out.println("New nurse name is: " + newNurse.name);
 
-        Hospital_Personal  newAccountant = new Accountant(6, 1888, "Elizabet", "newDep", "newStamp");
+        Hospital_Personal newAccountant = new Accountant(6, 1888, "Elizabet", "newDep", "newStamp");
         accountant.work();
         System.out.println("New accountant birthday: " + newAccountant.dateOfBirth);
 

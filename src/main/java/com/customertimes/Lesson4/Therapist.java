@@ -2,7 +2,7 @@ package com.customertimes.Lesson4;
 
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 
-public class Therapist extends Doctors {
+public class Therapist extends Doctors implements IRescue{
 
     public doctors_enum rankTherap;
 
@@ -14,5 +14,11 @@ public class Therapist extends Doctors {
     @Override
     public void work() {
         System.out.println("I work with symptoms");
+    }
+
+    @Override
+    public void getRescue() {
+        System.out.println("Therapist provide rescue");
+
     }
 }

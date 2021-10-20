@@ -15,12 +15,12 @@ public class Accountant extends Hospital_Personal {
     }
 
     /* Getter */
-    public String getStamp(){
+    public String getStamp() {
         return stamp;
     }
 
     /* Setter */
-    public void setStamp(String newStamp){
+    public void setStamp(String newStamp) {
         this.stamp = newStamp;
     }
 }

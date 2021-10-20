@@ -3,7 +3,7 @@ package com.customertimes.Lesson4;
 public abstract class Doctors extends Ambulance_Personal {
     private int pricePerVisit;
 
-    public static void notAbstractDoctorsMethod(String...args){
+    public static void notAbstractDoctorsMethod(String... args) {
         System.out.println("I am not abstract doctor!");
     }
 

@@ -1,6 +1,6 @@
 package com.customertimes.Lesson4;
 
-public class Pharmacist extends Hospital_Personal {
+public class Pharmacist extends Hospital_Personal implements IHealth, IProfilact {
     public String drugs;
 
     Pharmacist(long id, int dateOfBirth, String name, String department, String drugs) {
@@ -11,5 +11,15 @@ public class Pharmacist extends Hospital_Personal {
     @Override
     public void work() {
         System.out.println("I work with pills");
+    }
+
+    @Override
+    public void getHealth() {
+        System.out.println("Pharmacist provide health");
+    }
+
+    @Override
+    public void getProfilact() {
+        System.out.println("Pharmacist provide profilact");
     }
 }

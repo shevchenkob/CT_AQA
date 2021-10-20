@@ -2,7 +2,7 @@ package com.customertimes.Lesson4;
 
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 
-public class Surgeon extends Doctors {
+public class Surgeon extends Doctors implements IRescue {
 
     public doctors_enum rankSurg;
     private String scalpel;
@@ -23,5 +23,11 @@ public class Surgeon extends Doctors {
 
     public void setScalpel(String scalpel) {
         this.scalpel = scalpel;
+    }
+
+    @Override
+    public void getRescue() {
+        System.out.println("Surgeon provide rescue");
+
     }
 }

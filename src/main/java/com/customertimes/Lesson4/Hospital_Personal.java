@@ -1,9 +1,9 @@
 package com.customertimes.Lesson4;
 
-public abstract class Hospital_Personal extends Personal{
+public abstract class Hospital_Personal extends Personal {
     public String department;
 
-    public static void notAbstractHospital (String...args) {
+    public static void notAbstractHospital(String... args) {
         System.out.println("My department is: " + 1);
     }
 
