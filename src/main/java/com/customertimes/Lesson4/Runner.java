@@ -1,11 +1,12 @@
 package com.customertimes.Lesson4;
 
+import Lesson6.NurseNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 
 public class Runner {
 
-    public static void main(String... args) {
+    public static void main(String... args) throws NurseNotWorkException {
         Surgeon surgeon = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
         surgeon.work();
         System.out.println("Surgeon name is: " + surgeon.name);
@@ -34,6 +35,7 @@ public class Runner {
         Personal newNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         System.out.println("New nurse name is: " + newNurse.name);
 
+
         Hospital_Personal newAccountant = new Accountant(6, 1888, "Elizabet", "newDep", "newStamp");
         accountant.work();
         System.out.println("New accountant birthday: " + newAccountant.dateOfBirth);
@@ -43,6 +45,25 @@ public class Runner {
         accountant.setStamp("myStamp");
         accountant.getStamp();
 
+        Nurses newOneNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
+        newOneNurse.getActive();
+
+        Surgeon surgeonNew = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
+        surgeonNew.getCareful();
+        surgeonNew.getRescue();
+
+        /* Exceptions */
+        Nurses secondOneNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
+        secondOneNurse.getID(20);
+
+        Nurses thirdOneNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
+        thirdOneNurse.getIdTry(50);
+
+        /* Why it is not working? */
+        //Doctors newDoctor = new Doctors(5, 1990, "Petya", "emergency", 20);
+
+        Surgeon newSurg1 = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
+        newSurg1.checkName("qwerty");
 
     }
 }

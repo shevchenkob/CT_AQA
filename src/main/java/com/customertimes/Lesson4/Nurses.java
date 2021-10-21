@@ -1,5 +1,6 @@
 package com.customertimes.Lesson4;
 
+import Lesson6.NurseNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 
 public class Nurses extends Ambulance_Personal implements IHealth, IRescue, IProfilact {
@@ -21,7 +22,23 @@ public class Nurses extends Ambulance_Personal implements IHealth, IRescue, IPro
         return result;
     }
 
-    ;
+    public long getID(int i) throws NurseNotWorkException {
+        if (id != 100) {
+            new NurseNotWorkException("Id of nurse is incorrect!");
+        }
+        return id;
+    }
+
+    public long getIdTry(int i) throws NurseNotWorkException {
+        if (id != 100) {
+            try {
+                throw new NurseNotWorkException("Id is wrong");
+            } catch (NurseNotWorkException e) {
+                e.printStackTrace();
+            }
+        }
+        return id;
+    }
 
     @Override
     public void work() {
