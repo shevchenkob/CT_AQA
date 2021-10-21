@@ -1,6 +1,6 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.DoctorNotWorkException;
+import Lesson6.DoctorException;
 
 public abstract class Doctors extends Ambulance_Personal {
     private int pricePerVisit;
@@ -22,6 +22,14 @@ public abstract class Doctors extends Ambulance_Personal {
     public void setPricePerVisit(int pricePerVisit) {
         this.pricePerVisit = pricePerVisit;
     }
-
+public int checkAge(int age) throws DoctorException {
+        if (age > 1990) {
+            try {
+                throw new DoctorException("Too young");
+            } catch (DoctorException e) {
+                e.printStackTrace();
+            }
+        } return age;
+}
 
 }

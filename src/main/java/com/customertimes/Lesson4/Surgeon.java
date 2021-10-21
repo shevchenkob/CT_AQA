@@ -1,6 +1,6 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.DoctorNotWorkException;
+import Lesson6.SurgeonNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 
 public class Surgeon extends Doctors implements IRescue {
@@ -32,11 +32,11 @@ public class Surgeon extends Doctors implements IRescue {
 
     }
 
-    public String checkName(String tempName) throws DoctorNotWorkException {
+    public String checkName(String tempName) throws SurgeonNotWorkException {
         if (name != "Vasya") {
             try {
-                throw new DoctorNotWorkException("Illegal name");
-            } catch (DoctorNotWorkException e) {
+                throw new SurgeonNotWorkException("Illegal name");
+            } catch (SurgeonNotWorkException e) {
                 e.printStackTrace();
             }
         }

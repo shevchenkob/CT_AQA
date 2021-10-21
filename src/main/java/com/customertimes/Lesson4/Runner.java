@@ -1,12 +1,13 @@
 package com.customertimes.Lesson4;
 
+import Lesson6.DoctorException;
 import Lesson6.NurseNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 
 public class Runner {
 
-    public static void main(String... args) throws NurseNotWorkException {
+    public static void main(String... args) throws NurseNotWorkException, DoctorException {
         Surgeon surgeon = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
         surgeon.work();
         System.out.println("Surgeon name is: " + surgeon.name);
@@ -59,8 +60,8 @@ public class Runner {
         Nurses thirdOneNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         thirdOneNurse.getIdTry(50);
 
-        /* Why it is not working? */
-        //Doctors newDoctor = new Doctors(5, 1990, "Petya", "emergency", 20);
+        Doctors newDoctor = new Surgeon(5, 1988, "Petya", "emergency", 20, doctors_enum.HIGHEST_RANK);
+        newDoctor.checkAge(1991);
 
         Surgeon newSurg1 = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
         String tempName = "someName";
