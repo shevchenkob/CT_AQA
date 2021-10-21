@@ -1,5 +1,8 @@
 package com.customertimes.Lesson4;
 
+import Lesson6.AccountantException;
+import Lesson6.SurgeonNotWorkException;
+
 public class Accountant extends Hospital_Personal {
 
     private String stamp;
@@ -22,5 +25,19 @@ public class Accountant extends Hospital_Personal {
     /* Setter */
     public void setStamp(String newStamp) {
         this.stamp = newStamp;
+    }
+
+    public String checkStamp(String tempStamp) throws AccountantException {
+        if (tempStamp != "signature") {
+            try {
+                throw new AccountantException("Incorrect stamp");
+            } catch (AccountantException e) {
+                e.printStackTrace();
+            }
+            finally {
+                System.out.println("But doesn't mind");
+            }
+        }
+        return tempStamp;
     }
 }
