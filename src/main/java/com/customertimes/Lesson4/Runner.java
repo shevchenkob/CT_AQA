@@ -63,7 +63,8 @@ public class Runner {
         //Doctors newDoctor = new Doctors(5, 1990, "Petya", "emergency", 20);
 
         Surgeon newSurg1 = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
-        newSurg1.checkName("qwerty");
+        String tempName = "someName";
+        newSurg1.checkName(tempName);
 
     }
 }

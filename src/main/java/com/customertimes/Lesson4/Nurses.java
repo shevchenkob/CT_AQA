@@ -22,6 +22,7 @@ public class Nurses extends Ambulance_Personal implements IHealth, IRescue, IPro
         return result;
     }
 
+    /* Not working */
     public long getID(int i) throws NurseNotWorkException {
         if (id != 100) {
             new NurseNotWorkException("Id of nurse is incorrect!");
