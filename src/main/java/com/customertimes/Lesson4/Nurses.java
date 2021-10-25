@@ -1,6 +1,6 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.NurseNotWorkException;
+import com.customertimes.Lesson6.NurseNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 
 public class Nurses extends Ambulance_Personal implements IHealth, IRescue, IProfilact {

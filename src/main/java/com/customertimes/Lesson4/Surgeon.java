@@ -1,6 +1,6 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.SurgeonNotWorkException;
+import com.customertimes.Lesson6.SurgeonNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 
 public class Surgeon extends Doctors implements IRescue {

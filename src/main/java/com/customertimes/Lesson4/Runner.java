@@ -1,8 +1,8 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.AccountantException;
-import Lesson6.DoctorException;
-import Lesson6.NurseNotWorkException;
+import com.customertimes.Lesson6.AccountantException;
+import com.customertimes.Lesson6.DoctorException;
+import com.customertimes.Lesson6.NurseNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 

@@ -1,6 +1,6 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.DoctorException;
+import com.customertimes.Lesson6.DoctorException;
 
 public abstract class Doctors extends Ambulance_Personal {
     private int pricePerVisit;

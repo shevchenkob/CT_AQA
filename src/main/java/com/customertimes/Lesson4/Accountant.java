@@ -1,7 +1,6 @@
 package com.customertimes.Lesson4;
 
-import Lesson6.AccountantException;
-import Lesson6.SurgeonNotWorkException;
+import com.customertimes.Lesson6.AccountantException;
 
 public class Accountant extends Hospital_Personal {
 
