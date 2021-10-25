@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StringTest {
     public static void main(String[] args) {
@@ -44,11 +46,11 @@ public class StringTest {
             System.out.println("Number of sentences: " + sentences.length);
 
             int count = 0;
-            for (int i=0; i<fileContent.length(); i++){
+            for (int i = 0; i < fileContent.length(); i++) {
                 if (Character.isLetter(fileContent.charAt(i)))
                     count++;
             }
-            System.out.println("Number of characters: "+ count);
+            System.out.println("Number of characters: " + count);
 
             String[] wordsInParagraph1 = paragraphs[0].split("\\s+");
             System.out.println("Number of wordsInParagraph1: " + wordsInParagraph1.length);
@@ -65,8 +67,7 @@ public class StringTest {
 
         } catch (IOException e) {
             e.printStackTrace();
-        };
-
+        }
 
     }
 
