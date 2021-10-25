@@ -10,8 +10,8 @@ public class myRegexp {
     }
 
     private static void regExpression1() {
-        Pattern pattern = Pattern.compile("^User (?:Anatolii98|Sergei) updated the page at \\d{1,2}:\\d{2} (?:am|pm), \\d+ days ago$");
-        Matcher matcher = pattern.matcher("User Anatolii98 updated the page at 11:11 am, 5 days ago");
+        Pattern pattern = Pattern.compile("^User (?:Anatolii98|Sergei) updated the page at \\d{1,2}:\\d{2} (?:am|pm), \\d{1,3} days ago$");
+        Matcher matcher = pattern.matcher("User Anatolii98 updated the page at 11:11 am, 999 days ago");
         boolean isFound = matcher.find();
         String result = isFound ? "Match found" : "Match not found";
         System.out.println(result);
