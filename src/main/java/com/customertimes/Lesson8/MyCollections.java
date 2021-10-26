@@ -7,6 +7,11 @@ import java.util.List;
 public class MyCollections {
 
     public static void main(String... args) {
+        myList();
+
+    }
+
+    public static void myList() {
         List<String> myArray = new ArrayList<>();
         myArray.add(0, "Volvo");
         myArray.add(1, "Tesla");
@@ -19,9 +24,8 @@ public class MyCollections {
         myArray.add(8, "Toyota");
         myArray.add(9, "Lexus");
 
-        for (int i = 0; i<myArray.size(); i++) {
+        for (int i = 0; i < myArray.size(); i++) {
             System.out.println(myArray.get(i) + "_" + i);
         }
-
     }
 }
