@@ -1,8 +1,9 @@
 package com.customertimes.Lesson4;
 
+import com.customertimes.Lesson4.MyInterfaces.IRescue;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 
-public class Therapist extends Doctors implements IRescue{
+public class Therapist extends Doctors implements IRescue {
 
     public doctors_enum rankTherap;
 

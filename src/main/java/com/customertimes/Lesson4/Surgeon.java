@@ -1,5 +1,6 @@
 package com.customertimes.Lesson4;
 
+import com.customertimes.Lesson4.MyInterfaces.IRescue;
 import com.customertimes.Lesson6.SurgeonNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
 

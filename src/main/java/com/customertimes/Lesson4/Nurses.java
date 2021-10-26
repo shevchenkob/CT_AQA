@@ -1,5 +1,8 @@
 package com.customertimes.Lesson4;
 
+import com.customertimes.Lesson4.MyInterfaces.IHealth;
+import com.customertimes.Lesson4.MyInterfaces.IProfilact;
+import com.customertimes.Lesson4.MyInterfaces.IRescue;
 import com.customertimes.Lesson6.NurseNotWorkException;
 import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
 

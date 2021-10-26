@@ -1,4 +1,4 @@
-package com.customertimes.Lesson4;
+package com.customertimes.Lesson4.MyInterfaces;
 
 public interface IProfilact {
     void getProfilact();
