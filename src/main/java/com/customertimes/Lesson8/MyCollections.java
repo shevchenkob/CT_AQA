@@ -1,14 +1,13 @@
 package com.customertimes.Lesson8;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class MyCollections {
 
-    public static void main(String... args) {
+    public static void main(String[] args) {
         // myArrayList();
-        myLinkedList();
+        //myLinkedList();
+        mySet();
 
     }
 
@@ -51,5 +50,39 @@ public class MyCollections {
 
         System.out.println("List after removing: " + list);
 
+    }
+
+    public static void mySet(){
+        Set<String> data = new LinkedHashSet<>();
+        data.add("one");
+        data.add("two");
+        data.add("one");
+        data.add("four");
+        data.add("five");
+        data.add("one");
+        data.add("seven");
+        data.add("one");
+        data.add("nine");
+        data.add("ten");
+
+        int index = 2;
+
+        /* Below method give error: Exception in thread "main" java.lang.ArrayStoreException: java.lang.String */
+//        Integer[] dataArray = new Integer[data.size()];
+//        dataArray = data.toArray(dataArray);
+//        System.out.println("Element at index " + index + "is: " + dataArray[index-1]);
+
+
+        Iterator<String> it = data.iterator();
+        int currIndex = 0;
+        String CurrentElement = null;
+        while (it.hasNext()) {
+            CurrentElement = it.next();
+            if (currIndex == index - 1) {
+                System.out.println("Element at index " + index + " is: " + CurrentElement);
+                break;
+            }
+            currIndex++;
+        }
     }
 }
