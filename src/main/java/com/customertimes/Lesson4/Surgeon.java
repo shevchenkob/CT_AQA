@@ -33,11 +33,12 @@ public class Surgeon extends Doctors implements IRescue {
 
     }
 
-    public String checkName(String tempName) throws SurgeonNotWorkException {
+    public String checkName(String tempName)  {
         if (name != "Vasya") {
             try {
                 throw new SurgeonNotWorkException("Illegal name");
-            } catch (SurgeonNotWorkException e) {
+            } catch (SurgeonNotWorkException e)
+                     {
                 e.printStackTrace();
             }
         }
