@@ -52,7 +52,7 @@ public class MyCollections {
 
     }
 
-    public static void mySet(){
+    public static void mySet() {
         Set<String> data = new LinkedHashSet<>();
         data.add("one");
         data.add("two");
@@ -72,7 +72,6 @@ public class MyCollections {
 //        dataArray = data.toArray(dataArray);
 //        System.out.println("Element at index " + index + "is: " + dataArray[index-1]);
 
-
         Iterator<String> it = data.iterator();
         int currIndex = 0;
         String CurrentElement = null;
@@ -84,5 +83,22 @@ public class MyCollections {
             }
             currIndex++;
         }
+    }
+
+    public static void myHashMap() {
+        Map<String, String> hashmap = new HashMap();
+
+        hashmap.put("1", "one");
+        hashmap.put("2", "two");
+        hashmap.put("3", "three");
+        hashmap.put("4", "four");
+        hashmap.put("5", "five");
+        hashmap.put("6", "six");
+        hashmap.put("7", "seven");
+        hashmap.put("8", "eight");
+        hashmap.put("9", "nine");
+        hashmap.put("10", "ten");
+
+
     }
 }
