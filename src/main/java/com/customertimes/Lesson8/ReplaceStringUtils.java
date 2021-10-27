@@ -11,5 +11,12 @@ public class ReplaceStringUtils {
         String result1 = StringUtils.replace(input, target, replacement);
         System.out.println(result1);
 
+        String result2 = StringUtils.replaceEach(input, new  String[] {"IntelliJ", "Community", "Edition"}, new String[] {"newIntelliJ", "newCommunity", "newEdition"});
+        System.out.println(result2);
+
+        String result3 = StringUtils.replaceChars(input, "I", "8");
+        System.out.println(result3);
+
+
     }
 }
