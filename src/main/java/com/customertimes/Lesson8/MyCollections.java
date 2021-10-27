@@ -7,7 +7,8 @@ public class MyCollections {
     public static void main(String[] args) {
         // myArrayList();
         //myLinkedList();
-        mySet();
+        //mySet();
+        myHashMap();
 
     }
 
@@ -93,12 +94,24 @@ public class MyCollections {
         hashmap.put("3", "three");
         hashmap.put("4", "four");
         hashmap.put("5", "five");
-        hashmap.put("6", "six");
+        hashmap.put("2", "two");
         hashmap.put("7", "seven");
         hashmap.put("8", "eight");
         hashmap.put("9", "nine");
         hashmap.put("10", "ten");
 
+        /* Output to console the 3rd element by key  */
+        System.out.println(hashmap.get("3"));
+
+        /* Output to console the 4st element by value */
+        for (Map.Entry<String, String> entry : hashmap.entrySet()) {
+            if (entry.getValue().equals("four")) {
+                System.out.println(entry.getKey());
+            }
+        }
+
+        /* Output to console each element by key. */
+        hashmap.forEach((key, value) -> System.out.println(key + ":" + value));
 
     }
 }
