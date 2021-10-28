@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class StringTest {
     public static void main(String[] args) {
-        //writeFile();
+        writeFile();
         readFile();
 
     }
@@ -36,17 +36,20 @@ public class StringTest {
             String fileContent = FileUtils.readFileToString(file, Charset.defaultCharset());
             System.out.println(fileContent);
 
-            String[] paragraphs = fileContent.split("\\n");
+            String replacedSpace = fileContent.replaceAll("[ .,—?:!]", " ");
+
+            String[] paragraphs = replacedSpace.split("\\n");
             System.out.println("Number of paragraphs: " + paragraphs.length);
 
-            String[] words = fileContent.split("\\s+");
+            //String[] words = fileContent.split("\\s+");
+            String[] words = replacedSpace.split(" ");
             System.out.println("Number of words: " + words.length);
 
             String[] sentences = fileContent.split("[?.]+");
             System.out.println("Number of sentences: " + sentences.length);
 
             int count = 0;
-            for (int i = 0; i < fileContent.length(); i++) {
+            for (int i = 0; i < replacedSpace.length(); i++) {
                 if (Character.isLetter(fileContent.charAt(i)))
                     count++;
             }
