@@ -34,6 +34,8 @@ public class StringTest {
 
         try {
             String fileContent = FileUtils.readFileToString(file, Charset.defaultCharset());
+
+
             System.out.println(fileContent);
 
             String replacedSpace = fileContent.replaceAll("[ .,—?:!]", " ");
