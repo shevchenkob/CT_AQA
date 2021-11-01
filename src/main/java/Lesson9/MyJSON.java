@@ -21,6 +21,7 @@ public class MyJSON {
         model.setName("Vasya");
         model.setDateOfBirth(1985);
         model.setId(11);
+        model.setTime(LocalDateTime.now());
 
         Jackson.parseObjectToJSON(model, filePath);
     }
