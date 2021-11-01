@@ -13,7 +13,7 @@ public class testExceptions {
                 System.out.println ("You Shouldn't divide a number by zero");
 
             } finally {
-                System.out.println("THis text always shown after first exception"); }
+                System.out.println("This text always shown after first exception"); }
 
             try {
                 int a[]=new int[10];
@@ -22,7 +22,7 @@ public class testExceptions {
             catch(ArrayIndexOutOfBoundsException e){
                 System.out.println ("ArrayIndexOutOfBounds");
             } finally {
-                System.out.println("THis text always shown after second exception"); }
+                System.out.println("This text always shown after second exception"); }
 
             try {
                 String str=null;
@@ -30,7 +30,7 @@ public class testExceptions {
             } catch (NullPointerException e) {
                 System.out.println("Null Pointer Exception");
             } finally {
-                System.out.println("THis text always shown after third exception"); }
+                System.out.println("This text always shown after third exception"); }
 
 
 
