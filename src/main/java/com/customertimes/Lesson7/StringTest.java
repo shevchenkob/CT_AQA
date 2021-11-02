@@ -31,10 +31,12 @@ public class StringTest {
 
     public static void readFile() {
         File file = new File("lesson7.doc");
-
+String fileContent = null;
         try {
-            String fileContent = FileUtils.readFileToString(file, Charset.defaultCharset());
-
+            fileContent = FileUtils.readFileToString(file, Charset.defaultCharset());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
             System.out.println(fileContent);
 
@@ -69,10 +71,6 @@ public class StringTest {
             String[] wordsInParagraph4 = paragraphs[3].split("\\s+");
             System.out.println("Number of wordsInParagraph1: " + wordsInParagraph4.length);
 
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
     }
 

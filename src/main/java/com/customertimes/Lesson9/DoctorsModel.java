@@ -1,4 +1,4 @@
-package Lesson9;
+package com.customertimes.Lesson9;
 
 public class DoctorsModel {
 

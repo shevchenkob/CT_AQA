@@ -1,12 +1,6 @@
-package Lesson9;
+package com.customertimes.Lesson9;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.io.File;
-import java.io.IOException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class MyJSON {
 
