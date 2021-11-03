@@ -1,0 +1,7 @@
+package com.customertimes.Lesson6;
+
+public class NurseNotWorkException extends RuntimeException {
+    public NurseNotWorkException(String message) {
+        super(message);
+    }
+}
