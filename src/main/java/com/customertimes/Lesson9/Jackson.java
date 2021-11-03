@@ -1,6 +1,7 @@
 package com.customertimes.Lesson9;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
@@ -12,6 +13,7 @@ public class Jackson {
     public static void parseObjectToJSON(PersonalModel model, String pathToFile) {
 
         ObjectMapper mapper = new ObjectMapper();
+        mapper.disable(SerializationFeature.WRITE_DATES_WITH_CONTEXT_TIME_ZONE);
         File file = new File(pathToFile);
         try {
             mapper.writeValue(file, model);

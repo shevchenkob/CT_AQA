@@ -1,16 +1,17 @@
 package com.customertimes.Lesson9;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class DoctorsModel {
 
+    @JsonProperty("pricePerVisit")
     private int pricePerVisit;
-    private SurgeonModel surgeonModel;
-    private TherapistModel therapistModel;
 
-//    DoctorsModel(int pricePerVisit, SurgeonModel surgeonModel, TherapistModel therapistModel){
-//        this.pricePerVisit = pricePerVisit;
-//        this.surgeonModel = surgeonModel;
-//        this.therapistModel = therapistModel;
-//    }
+    @JsonProperty("surgeonModel")
+    private SurgeonModel surgeonModel;
+
+    @JsonProperty("therapistModel")
+    private TherapistModel therapistModel;
 
     public int getPricePerVisit() {
         return pricePerVisit;

@@ -1,6 +1,9 @@
 package com.customertimes.Lesson9;
 
+import com.customertimes.Lesson4.personals_enums.NurseEnum;
+
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class MyJSON {
 
@@ -10,20 +13,23 @@ public class MyJSON {
     }
 
     public static void parseObjectToJSON() {
-        AmbulancePersonalModel ambModel = new AmbulancePersonalModel();
+
         DoctorsModel docModel = new DoctorsModel();
         docModel.setPricePerVisit(50);
 
+        DoctorsModel docModel1 = new DoctorsModel();
+        docModel1.setPricePerVisit(100);
+
+        NursesModel nursesModel = new NursesModel();
+        nursesModel.setCategory(NurseEnum.FIRST_CATEGORY);
+
+        AmbulancePersonalModel ambModel = new AmbulancePersonalModel();
         ambModel.setSquad("squad1");
-        ambModel.setDoctorsModel(docModel);
+        ambModel.setDoctorsModel(List.of(docModel, docModel1));
+        ambModel.setNursesModel(nursesModel);
 
-        PersonalModel model = new PersonalModel(11, 1985, "Vasya", ambModel);
+        PersonalModel model = new PersonalModel(11, 1985, "Vasya", ambModel, LocalDateTime.now() );
         String filePath = "src/main/resources/JSON_FILE.json";
-//        model.setName("Vasya");
-//        model.setDateOfBirth(1985);
-//        model.setId(11);
-//        model.setTime(LocalDateTime.now());
-
 
         Jackson.parseObjectToJSON(model, filePath);
     }

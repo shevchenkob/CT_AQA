@@ -1,16 +1,19 @@
 package com.customertimes.Lesson9;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
+
 public class AmbulancePersonalModel {
 
+    @JsonProperty("squad")
     public String squad;
-    private DoctorsModel doctorsModel;
-    private NursesModel nursesModel;
 
-//    AmbulancePersonalModel(String squad, DoctorsModel doctorsModel, NursesModel nursesModel){
-//        this.squad = squad;
-//        this.doctorsModel = doctorsModel;
-//        this.nursesModel = nursesModel;
-//    }
+    @JsonProperty("doctorsModel")
+    private List<DoctorsModel> doctorsModel;
+
+    @JsonProperty("nursesModel")
+    private NursesModel nursesModel;
 
     public String getSquad() {
         return squad;
@@ -20,11 +23,11 @@ public class AmbulancePersonalModel {
         this.squad = squad;
     }
 
-    public DoctorsModel getDoctorsModel() {
+    public List<DoctorsModel> getDoctorsModel() {
         return doctorsModel;
     }
 
-    public void setDoctorsModel(DoctorsModel doctorsModel) {
+    public void setDoctorsModel(List<DoctorsModel> doctorsModel) {
         this.doctorsModel = doctorsModel;
     }
 
