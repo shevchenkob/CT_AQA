@@ -23,23 +23,13 @@ public abstract class Doctors extends Ambulance_Personal {
         this.pricePerVisit = pricePerVisit;
     }
 
-//    public int checkAge(int age) throws DoctorException {
-//        if (age > 1990) {
-//            try {
-//                throw new DoctorException("Too young");
-//            } catch (DoctorException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//        return age;
-//    }
 
     public int checkAge(int age) {
         if (age > 1990) {
             try {
                 throw new DoctorException("Too young");
             } catch (DoctorException e) {
-                e.printStackTrace();
+                System.out.println(e);
             }
         }
         return age;

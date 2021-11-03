@@ -26,26 +26,13 @@ public class Accountant extends Hospital_Personal {
         this.stamp = newStamp;
     }
 
-//    public String checkStamp(String tempStamp) throws AccountantException {
-//        if (tempStamp != "signature") {
-//            try {
-//                throw new AccountantException("Incorrect stamp");
-//            } catch (AccountantException e) {
-//                e.printStackTrace();
-//            }
-//            finally {
-//                System.out.println("But doesn't mind");
-//            }
-//        }
-//        return tempStamp;
-//    }
 
     public void checkStamp(String tempStamp) {
         if (tempStamp != "signature") {
             try {
                 throw new AccountantException("Incorrect stamp");
             } catch (AccountantException e) {
-                e.printStackTrace();
+                System.out.println(e);
             }
         }
     }
