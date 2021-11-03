@@ -15,7 +15,7 @@ public class PersonalModel {
     private AmbulancePersonalModel ambulancePersonalModel;
     private HospitalPersonalModel hospitalPersonalModel;
 
-    public PersonalModel(long id, int dateOfBirth, String name
+    public PersonalModel(long id, int dateOfBirth, String name, AmbulancePersonalModel ambulancePersonalModel
                 //  LocalDateTime time,
               //    AmbulancePersonalModel ambulancePersonalModel,
               //    HospitalPersonalModel hospitalPersonalModel
@@ -24,7 +24,7 @@ public class PersonalModel {
         this.dateOfBirth = dateOfBirth;
         this.name = name;
         //this.time = time;
-       // this.ambulancePersonalModel = ambulancePersonalModel;
+        this.ambulancePersonalModel = ambulancePersonalModel;
        // this.hospitalPersonalModel = hospitalPersonalModel;
     }
 

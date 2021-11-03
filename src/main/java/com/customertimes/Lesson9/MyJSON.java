@@ -10,7 +10,14 @@ public class MyJSON {
     }
 
     public static void parseObjectToJSON() {
-        PersonalModel model = new PersonalModel(11, 1985, "Vasya");
+        AmbulancePersonalModel ambModel = new AmbulancePersonalModel();
+        DoctorsModel docModel = new DoctorsModel();
+        docModel.setPricePerVisit(50);
+
+        ambModel.setSquad("squad1");
+        ambModel.setDoctorsModel(docModel);
+
+        PersonalModel model = new PersonalModel(11, 1985, "Vasya", ambModel);
         String filePath = "src/main/resources/JSON_FILE.json";
 //        model.setName("Vasya");
 //        model.setDateOfBirth(1985);

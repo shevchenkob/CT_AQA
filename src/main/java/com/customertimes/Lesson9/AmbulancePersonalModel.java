@@ -6,11 +6,11 @@ public class AmbulancePersonalModel {
     private DoctorsModel doctorsModel;
     private NursesModel nursesModel;
 
-    AmbulancePersonalModel(String squad, DoctorsModel doctorsModel, NursesModel nursesModel){
-        this.squad = squad;
-        this.doctorsModel = doctorsModel;
-        this.nursesModel = nursesModel;
-    }
+//    AmbulancePersonalModel(String squad, DoctorsModel doctorsModel, NursesModel nursesModel){
+//        this.squad = squad;
+//        this.doctorsModel = doctorsModel;
+//        this.nursesModel = nursesModel;
+//    }
 
     public String getSquad() {
         return squad;
@@ -34,5 +34,8 @@ public class AmbulancePersonalModel {
 
     public void setNursesModel(NursesModel nursesModel) {
         this.nursesModel = nursesModel;
+    }
+
+    public void setDoctorsModel() {
     }
 }

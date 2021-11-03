@@ -6,11 +6,11 @@ public class DoctorsModel {
     private SurgeonModel surgeonModel;
     private TherapistModel therapistModel;
 
-    DoctorsModel(int pricePerVisit, SurgeonModel surgeonModel, TherapistModel therapistModel){
-        this.pricePerVisit = pricePerVisit;
-        this.surgeonModel = surgeonModel;
-        this.therapistModel = therapistModel;
-    }
+//    DoctorsModel(int pricePerVisit, SurgeonModel surgeonModel, TherapistModel therapistModel){
+//        this.pricePerVisit = pricePerVisit;
+//        this.surgeonModel = surgeonModel;
+//        this.therapistModel = therapistModel;
+//    }
 
     public int getPricePerVisit() {
         return pricePerVisit;
