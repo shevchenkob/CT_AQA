@@ -1,16 +1,16 @@
 package com.customertimes.Lesson9;
 
-import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
+import com.customertimes.Lesson4.personals_enums.DoctorsEnum;
 
 public class SurgeonModel {
-    public doctors_enum rankSurg;
+    public DoctorsEnum rankSurg;
     private String scalpel;
 
-    public doctors_enum getRankSurg() {
+    public DoctorsEnum getRankSurg() {
         return rankSurg;
     }
 
-    public void setRankSurg(doctors_enum rankSurg) {
+    public void setRankSurg(DoctorsEnum rankSurg) {
         this.rankSurg = rankSurg;
     }
 

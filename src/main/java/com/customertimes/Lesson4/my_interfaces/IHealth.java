@@ -1,4 +1,4 @@
-package com.customertimes.Lesson4.MyInterfaces;
+package com.customertimes.Lesson4.my_interfaces;
 
 public interface IHealth {
     void getHealth();

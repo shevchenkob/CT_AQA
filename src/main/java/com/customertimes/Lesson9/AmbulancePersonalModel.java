@@ -6,6 +6,12 @@ public class AmbulancePersonalModel {
     private DoctorsModel doctorsModel;
     private NursesModel nursesModel;
 
+    AmbulancePersonalModel(String squad, DoctorsModel doctorsModel, NursesModel nursesModel){
+        this.squad = squad;
+        this.doctorsModel = doctorsModel;
+        this.nursesModel = nursesModel;
+    }
+
     public String getSquad() {
         return squad;
     }

@@ -1,13 +1,13 @@
 package com.customertimes.Lesson4;
 
-import com.customertimes.Lesson4.MyInterfaces.IRescue;
-import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
+import com.customertimes.Lesson4.my_interfaces.IRescue;
+import com.customertimes.Lesson4.personals_enums.DoctorsEnum;
 
 public class Therapist extends Doctors implements IRescue {
 
-    public doctors_enum rankTherap;
+    public DoctorsEnum rankTherap;
 
-    Therapist(long id, int dateOfBirth, String name, String squad, int pricePerVisit, doctors_enum rankTherap) {
+    Therapist(long id, int dateOfBirth, String name, String squad, int pricePerVisit, DoctorsEnum rankTherap) {
         super(id, dateOfBirth, name, squad, pricePerVisit);
         this.rankTherap = rankTherap;
     }

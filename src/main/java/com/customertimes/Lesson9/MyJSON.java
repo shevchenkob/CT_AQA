@@ -10,19 +10,20 @@ public class MyJSON {
     }
 
     public static void parseObjectToJSON() {
-        PersonalModel model = new PersonalModel();
-        String filePath = "JSON_FILE.json";
-        model.setName("Vasya");
-        model.setDateOfBirth(1985);
-        model.setId(11);
-        model.setTime(LocalDateTime.now());
+        PersonalModel model = new PersonalModel(11, 1985, "Vasya");
+        String filePath = "src/main/resources/JSON_FILE.json";
+//        model.setName("Vasya");
+//        model.setDateOfBirth(1985);
+//        model.setId(11);
+//        model.setTime(LocalDateTime.now());
+
 
         Jackson.parseObjectToJSON(model, filePath);
     }
 
     public static void parseJSONToObject() {
 
-        String filePath = "JSON_DATA.json";
+        String filePath = "src/main/resources/JSON_DATA.json";
 
         PersonalModel model = Jackson.parseJSONToObject(filePath);
 

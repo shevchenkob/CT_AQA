@@ -3,21 +3,21 @@ package com.customertimes.Lesson4;
 import com.customertimes.Lesson6.AccountantException;
 import com.customertimes.Lesson6.DoctorException;
 import com.customertimes.Lesson6.NurseNotWorkException;
-import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
-import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
+import com.customertimes.Lesson4.personals_enums.DoctorsEnum;
+import com.customertimes.Lesson4.personals_enums.NurseEnum;
 
 public class Runner {
 
     public static void main(String... args) throws NurseNotWorkException, DoctorException, AccountantException {
-        Surgeon surgeon = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
+        Surgeon surgeon = new Surgeon(10, 1980, "Ivan", "emergency", 50, DoctorsEnum.FIRST_RANK);
         surgeon.work();
         System.out.println("Surgeon name is: " + surgeon.name);
 
-        Therapist therapist = new Therapist(15, 1975, "Vasya", "usual", 40, doctors_enum.HIGHEST_RANK);
+        Therapist therapist = new Therapist(15, 1975, "Vasya", "usual", 40, DoctorsEnum.HIGHEST_RANK);
         therapist.work();
         System.out.println("Therapist rank is: " + therapist.rankTherap);
 
-        Nurses nurses = new Nurses(8, 1995, "Kate", "profilact", nurse_enum.SECOND_CATEGORY);
+        Nurses nurses = new Nurses(8, 1995, "Kate", "profilact", NurseEnum.SECOND_CATEGORY);
         nurses.work();
         System.out.println("Nurse squad is: " + nurses.squad);
 
@@ -50,7 +50,7 @@ public class Runner {
         Nurses newOneNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         newOneNurse.getActive();
 
-        Surgeon surgeonNew = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
+        Surgeon surgeonNew = new Surgeon(10, 1980, "Ivan", "emergency", 50, DoctorsEnum.FIRST_RANK);
         surgeonNew.getCareful();
         surgeonNew.getRescue();
 
@@ -61,10 +61,10 @@ public class Runner {
         Nurses thirdOneNurse = new Nurses(22, 2001, "Megan", "intensiveCare");
         thirdOneNurse.getIdTry(50);
 
-        Doctors newDoctor = new Surgeon(5, 1988, "Petya", "emergency", 20, doctors_enum.HIGHEST_RANK);
+        Doctors newDoctor = new Surgeon(5, 1988, "Petya", "emergency", 20, DoctorsEnum.HIGHEST_RANK);
         newDoctor.checkAge(1991);
 
-        Surgeon newSurg1 = new Surgeon(10, 1980, "Ivan", "emergency", 50, doctors_enum.FIRST_RANK);
+        Surgeon newSurg1 = new Surgeon(10, 1980, "Ivan", "emergency", 50, DoctorsEnum.FIRST_RANK);
         String tempName = "someName";
         newSurg1.checkName(tempName);
 

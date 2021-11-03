@@ -1,15 +1,15 @@
 package com.customertimes.Lesson4;
 
-import com.customertimes.Lesson4.MyInterfaces.IHealth;
-import com.customertimes.Lesson4.MyInterfaces.IProfilact;
-import com.customertimes.Lesson4.MyInterfaces.IRescue;
+import com.customertimes.Lesson4.my_interfaces.IHealth;
+import com.customertimes.Lesson4.my_interfaces.IProfilact;
+import com.customertimes.Lesson4.my_interfaces.IRescue;
 import com.customertimes.Lesson6.NurseNotWorkException;
-import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
+import com.customertimes.Lesson4.personals_enums.NurseEnum;
 
 public class Nurses extends Ambulance_Personal implements IHealth, IRescue, IProfilact {
-    public nurse_enum category;
+    public NurseEnum category;
 
-    Nurses(long id, int dateOfBirth, String name, String squad, nurse_enum category) {
+    Nurses(long id, int dateOfBirth, String name, String squad, NurseEnum category) {
         super(id, dateOfBirth, name, squad);
         this.category = category;
     }

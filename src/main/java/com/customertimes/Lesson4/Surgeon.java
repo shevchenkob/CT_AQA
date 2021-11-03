@@ -1,15 +1,15 @@
 package com.customertimes.Lesson4;
 
-import com.customertimes.Lesson4.MyInterfaces.IRescue;
+import com.customertimes.Lesson4.my_interfaces.IRescue;
 import com.customertimes.Lesson6.SurgeonNotWorkException;
-import com.customertimes.Lesson4.PersonalsEnums.doctors_enum;
+import com.customertimes.Lesson4.personals_enums.DoctorsEnum;
 
 public class Surgeon extends Doctors implements IRescue {
 
-    public doctors_enum rankSurg;
+    public DoctorsEnum rankSurg;
     private String scalpel;
 
-    Surgeon(long id, int dateOfBirth, String name, String squad, int pricePerVisit, doctors_enum rankSurg) {
+    Surgeon(long id, int dateOfBirth, String name, String squad, int pricePerVisit, DoctorsEnum rankSurg) {
         super(id, dateOfBirth, name, squad, pricePerVisit);
         this.rankSurg = rankSurg;
     }

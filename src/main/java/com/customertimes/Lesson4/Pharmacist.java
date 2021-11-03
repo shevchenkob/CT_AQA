@@ -1,7 +1,7 @@
 package com.customertimes.Lesson4;
 
-import com.customertimes.Lesson4.MyInterfaces.IHealth;
-import com.customertimes.Lesson4.MyInterfaces.IProfilact;
+import com.customertimes.Lesson4.my_interfaces.IHealth;
+import com.customertimes.Lesson4.my_interfaces.IProfilact;
 
 public class Pharmacist extends Hospital_Personal implements IHealth, IProfilact {
     public String drugs;

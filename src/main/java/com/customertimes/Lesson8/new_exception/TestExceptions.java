@@ -1,6 +1,6 @@
-package com.customertimes.Lesson8.newException;
+package com.customertimes.Lesson8.new_exception;
 
-public class testExceptions {
+public class TestExceptions {
 
     public static void main(String... args) {
         int myDigit = 5;

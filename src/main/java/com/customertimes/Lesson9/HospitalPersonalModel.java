@@ -7,6 +7,13 @@ public class HospitalPersonalModel {
     private AdministratorsModel administratorsModel;
     private PharmacistModel pharmacistModel;
 
+    HospitalPersonalModel(String department, AccountantModel accountantModel, AdministratorsModel administratorsModel, PharmacistModel pharmacistModel){
+        this.department = department;
+        this.accountantModel = accountantModel;
+        this.administratorsModel = administratorsModel;
+        this.pharmacistModel = pharmacistModel;
+    }
+
     public String getDepartment() {
         return department;
     }

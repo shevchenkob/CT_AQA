@@ -1,16 +1,20 @@
 package com.customertimes.Lesson9;
 
-import com.customertimes.Lesson4.PersonalsEnums.nurse_enum;
+import com.customertimes.Lesson4.personals_enums.NurseEnum;
 
 public class NursesModel {
 
-    public nurse_enum category;
+    public NurseEnum category;
 
-    public nurse_enum getCategory() {
+    NursesModel(NurseEnum category){
+        this.category = category;
+    }
+
+    public NurseEnum getCategory() {
         return category;
     }
 
-    public void setCategory(nurse_enum category) {
+    public void setCategory(NurseEnum category) {
         this.category = category;
     }
 

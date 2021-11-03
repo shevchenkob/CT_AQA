@@ -94,7 +94,7 @@ public class MyCollections {
         hashmap.put("3", "three");
         hashmap.put("4", "four");
         hashmap.put("5", "five");
-        hashmap.put("2", "two");
+        hashmap.put("2", "six");
         hashmap.put("7", "seven");
         hashmap.put("8", "eight");
         hashmap.put("9", "nine");
