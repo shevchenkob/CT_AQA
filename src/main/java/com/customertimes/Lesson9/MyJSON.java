@@ -79,6 +79,12 @@ public class MyJSON {
         System.out.println("Name: " + model.getName());
         System.out.println("Birthday: " + model.getDateOfBirth());
         System.out.println("Id is: " + model.getId());
-
+        System.out.println("Squad is: " + model.getAmbulancePersonalModel().getSquad());
+        System.out.println("Stamp is: " + model.getHospitalPersonalModel().getAccountantModel().getStamp());
+        System.out.println("Category is: " + model.getAmbulancePersonalModel().getNursesModel().getCategory());
+        System.out.println("Department is: " + model.getHospitalPersonalModel().getDepartment());
+        System.out.println("Workplace is: " + model.getHospitalPersonalModel().getAdministratorsModel().getWorkplace());
+        System.out.println("Drugs is: " + model.getHospitalPersonalModel().getPharmacistModel().getDrugs());
+        System.out.println("Stamp is: " + model.getHospitalPersonalModel().getAccountantModel().getStamp());
     }
 }

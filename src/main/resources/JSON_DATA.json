@@ -1,8 +1,45 @@
 {
-  "id": 555,
-  "dateOfBirth": 1990,
-  "name": "Petya",
-  "time": null,
-  "ambulancePersonalModel": null,
-  "hospitalPersonalModel": null
+  "id": 11,
+  "dateOfBirth": 1985123,
+  "name": "VasyaNEW",
+  "ambulancePersonalModel": {
+    "squad": "squad1NEW",
+    "doctorsModel": [
+      {
+        "pricePerVisit": 50123,
+        "surgeonModel": {
+          "rankSurg": "HIGHEST_RANK",
+          "scalpel": "sharpNEW"
+        },
+        "therapistModel": {
+          "rankTherap": "HIGHEST_RANK"
+        }
+      },
+      {
+        "pricePerVisit": 100123,
+        "surgeonModel": {
+          "rankSurg": "FIRST_RANK",
+          "scalpel": "ironMEW"
+        },
+        "therapistModel": {
+          "rankTherap": "INTERN"
+        }
+      }
+    ],
+    "nursesModel": {
+      "category": "FIRST_CATEGORY"
+    }
+  },
+  "hospitalPersonalModel": {
+    "department": "testNEW",
+    "accountantModel": {
+      "stamp": "signStampNEW"
+    },
+    "administratorsModel": {
+      "workplace": "receptionNEW"
+    },
+    "pharmacistModel": {
+      "drugs": "pillsNEW"
+    }
+  }
 }

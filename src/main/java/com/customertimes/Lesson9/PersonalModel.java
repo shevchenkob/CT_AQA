@@ -31,9 +31,7 @@ public class PersonalModel {
     @JsonProperty("hospitalPersonalModel")
     private HospitalPersonalModel hospitalPersonalModel;
 
-    public PersonalModel(long id, int dateOfBirth, String name, AmbulancePersonalModel ambulancePersonalModel,
-                         LocalDateTime time, HospitalPersonalModel hospitalPersonalModel
-    ){
+    public PersonalModel(long id, int dateOfBirth, String name, AmbulancePersonalModel ambulancePersonalModel, LocalDateTime time, HospitalPersonalModel hospitalPersonalModel) {
         this.id = id;
         this.dateOfBirth = dateOfBirth;
         this.name = name;
@@ -44,8 +42,8 @@ public class PersonalModel {
     }
 
 
-
-public PersonalModel(){}
+    public PersonalModel() {
+    }
 
 
     public LocalDateTime getTime() {
@@ -55,6 +53,7 @@ public PersonalModel(){}
     public void setTime(LocalDateTime time) {
         this.time = time;
     }
+
     DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm a z");
 
     public long getId() {

@@ -10,7 +10,7 @@ public class AmbulancePersonalModel {
     public String squad;
 
     @JsonProperty("doctorsModel")
-    private List<DoctorsModel> doctorsModel;
+    public List<DoctorsModel> doctorsModel;
 
     @JsonProperty("nursesModel")
     private NursesModel nursesModel;

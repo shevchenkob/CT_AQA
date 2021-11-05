@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class DoctorsModel {
 
     @JsonProperty("pricePerVisit")
-    private int pricePerVisit;
+    public int pricePerVisit;
 
     @JsonProperty("surgeonModel")
-    private SurgeonModel surgeonModel;
+    public SurgeonModel surgeonModel;
 
     @JsonProperty("therapistModel")
-    private TherapistModel therapistModel;
+    public TherapistModel therapistModel;
 
     public int getPricePerVisit() {
         return pricePerVisit;
