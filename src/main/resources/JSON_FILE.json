@@ -2,7 +2,7 @@
   "id": 11,
   "dateOfBirth": 1985,
   "name": "Vasya",
-  "time": "2021-11-05T17:12:54.647497800",
+  "time": "2021-11-05T17:23:55.805903",
   "ambulancePersonalModel": {
     "squad": "squad1",
     "doctorsModel": [
@@ -35,6 +35,8 @@
     "department": "test",
     "accountantModel": null,
     "administratorsModel": null,
-    "pharmacistModel": null
+    "pharmacistModel": {
+      "drugs": "pills"
+    }
   }
 }

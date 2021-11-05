@@ -47,8 +47,12 @@ public class MyJSON {
         ambModel.setDoctorsModel(List.of(docModel, docModel1));
         ambModel.setNursesModel(nursesModel);
 
+        PharmacistModel pharMod = new PharmacistModel();
+        pharMod.setDrugs("pills");
+
         HospitalPersonalModel hotPersMod = new HospitalPersonalModel();
         hotPersMod.setDepartment("test");
+        hotPersMod.setPharmacistModel(pharMod);
 
         PersonalModel model = new PersonalModel(11, 1985, "Vasya", ambModel, LocalDateTime.now(), hotPersMod );
         String filePath = "src/main/resources/JSON_FILE.json";
