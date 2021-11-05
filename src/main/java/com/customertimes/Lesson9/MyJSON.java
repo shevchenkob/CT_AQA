@@ -1,5 +1,6 @@
 package com.customertimes.Lesson9;
 
+import com.customertimes.Lesson4.personals_enums.DoctorsEnum;
 import com.customertimes.Lesson4.personals_enums.NurseEnum;
 
 import java.time.LocalDateTime;
@@ -13,12 +14,22 @@ public class MyJSON {
     }
 
     public static void parseObjectToJSON() {
+        SurgeonModel surMod = new SurgeonModel();
+        surMod.setRankSurg(DoctorsEnum.HIGHEST_RANK);
+        surMod.setScalpel("sharp");
+
+        SurgeonModel surMod1 = new SurgeonModel();
+        surMod.setRankSurg(DoctorsEnum.FIRST_RANK);
+        surMod.setScalpel("iron");
 
         DoctorsModel docModel = new DoctorsModel();
         docModel.setPricePerVisit(50);
+        docModel.setSurgeonModel(surMod);
 
         DoctorsModel docModel1 = new DoctorsModel();
         docModel1.setPricePerVisit(100);
+        //docModel.setSurgeonModel(surMod1);
+
 
         NursesModel nursesModel = new NursesModel();
         nursesModel.setCategory(NurseEnum.FIRST_CATEGORY);
