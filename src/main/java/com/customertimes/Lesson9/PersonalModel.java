@@ -39,10 +39,12 @@ public class PersonalModel {
         this.name = name;
         this.time = time;
         this.ambulancePersonalModel = ambulancePersonalModel;
+
     }
 
-    public PersonalModel (){}
 
+
+public PersonalModel(){}
 
 
     public LocalDateTime getTime() {

@@ -19,8 +19,8 @@ public class MyJSON {
         surMod.setScalpel("sharp");
 
         SurgeonModel surMod1 = new SurgeonModel();
-        surMod.setRankSurg(DoctorsEnum.FIRST_RANK);
-        surMod.setScalpel("iron");
+        surMod1.setRankSurg(DoctorsEnum.FIRST_RANK);
+        surMod1.setScalpel("iron");
 
         DoctorsModel docModel = new DoctorsModel();
         docModel.setPricePerVisit(50);
@@ -28,7 +28,7 @@ public class MyJSON {
 
         DoctorsModel docModel1 = new DoctorsModel();
         docModel1.setPricePerVisit(100);
-        //docModel.setSurgeonModel(surMod1);
+        docModel1.setSurgeonModel(surMod1);
 
 
         NursesModel nursesModel = new NursesModel();
