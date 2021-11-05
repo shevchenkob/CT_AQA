@@ -50,9 +50,19 @@ public class MyJSON {
         PharmacistModel pharMod = new PharmacistModel();
         pharMod.setDrugs("pills");
 
+        AdministratorsModel adminMod = new AdministratorsModel();
+        adminMod.setWorkplace("reception");
+
+        AccountantModel accMod = new AccountantModel();
+        accMod.setStamp("signStamp");
+
         HospitalPersonalModel hotPersMod = new HospitalPersonalModel();
         hotPersMod.setDepartment("test");
         hotPersMod.setPharmacistModel(pharMod);
+        hotPersMod.setAdministratorsModel(adminMod);
+        hotPersMod.setAccountantModel(accMod);
+
+
 
         PersonalModel model = new PersonalModel(11, 1985, "Vasya", ambModel, LocalDateTime.now(), hotPersMod );
         String filePath = "src/main/resources/JSON_FILE.json";
