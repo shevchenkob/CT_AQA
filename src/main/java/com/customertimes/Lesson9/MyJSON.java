@@ -22,13 +22,21 @@ public class MyJSON {
         surMod1.setRankSurg(DoctorsEnum.FIRST_RANK);
         surMod1.setScalpel("iron");
 
+        TherapistModel terMod = new TherapistModel();
+        terMod.setRankTherap(DoctorsEnum.HIGHEST_RANK);
+
+        TherapistModel terMod1 = new TherapistModel();
+        terMod1.setRankTherap(DoctorsEnum.INTERN);
+
         DoctorsModel docModel = new DoctorsModel();
         docModel.setPricePerVisit(50);
         docModel.setSurgeonModel(surMod);
+        docModel.setTherapistModel(terMod);
 
         DoctorsModel docModel1 = new DoctorsModel();
         docModel1.setPricePerVisit(100);
         docModel1.setSurgeonModel(surMod1);
+        docModel1.setTherapistModel(terMod1);
 
 
         NursesModel nursesModel = new NursesModel();

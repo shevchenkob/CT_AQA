@@ -2,7 +2,7 @@
   "id": 11,
   "dateOfBirth": 1985,
   "name": "Vasya",
-  "time": "2021-11-05T17:02:08.224753800",
+  "time": "2021-11-05T17:07:56.862644200",
   "ambulancePersonalModel": {
     "squad": "squad1",
     "doctorsModel": [
@@ -12,7 +12,9 @@
           "rankSurg": "HIGHEST_RANK",
           "scalpel": "sharp"
         },
-        "therapistModel": null
+        "therapistModel": {
+          "rankTherap": "HIGHEST_RANK"
+        }
       },
       {
         "pricePerVisit": 100,
@@ -20,7 +22,9 @@
           "rankSurg": "FIRST_RANK",
           "scalpel": "iron"
         },
-        "therapistModel": null
+        "therapistModel": {
+          "rankTherap": "INTERN"
+        }
       }
     ],
     "nursesModel": {
