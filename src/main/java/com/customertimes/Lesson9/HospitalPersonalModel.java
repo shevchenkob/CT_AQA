@@ -14,6 +14,9 @@ public class HospitalPersonalModel {
         this.pharmacistModel = pharmacistModel;
     }
 
+    public HospitalPersonalModel() {}
+
+
     public String getDepartment() {
         return department;
     }
@@ -45,6 +48,8 @@ public class HospitalPersonalModel {
     public void setPharmacistModel(PharmacistModel pharmacistModel) {
         this.pharmacistModel = pharmacistModel;
     }
+
+
 
 
 }

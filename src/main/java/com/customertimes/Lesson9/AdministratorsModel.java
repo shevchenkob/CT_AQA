@@ -10,6 +10,10 @@ public class AdministratorsModel {
         this.workplace = workplace;
     }
 
+    public AdministratorsModel() {
+
+    }
+
     public String getWorkplace() {
         return workplace;
     }

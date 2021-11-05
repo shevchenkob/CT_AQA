@@ -32,7 +32,7 @@ public class PersonalModel {
     private HospitalPersonalModel hospitalPersonalModel;
 
     public PersonalModel(long id, int dateOfBirth, String name, AmbulancePersonalModel ambulancePersonalModel,
-                  LocalDateTime time
+                         LocalDateTime time
     ){
         this.id = id;
         this.dateOfBirth = dateOfBirth;

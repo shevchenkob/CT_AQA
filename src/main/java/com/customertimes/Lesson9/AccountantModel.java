@@ -7,6 +7,10 @@ public class AccountantModel {
         this.stamp = stamp;
     }
 
+    public AccountantModel() {
+
+    }
+
     public String getStamp() {
         return stamp;
     }
