@@ -16,9 +16,13 @@ public class GetProperties {
         System.out.println("Database password = " + properties.getProperty("dbpassword"));
         System.out.println("Database name = " + properties.getProperty("database"));
         System.out.println("Database user = " + properties.getProperty("dbuser"));
+        System.out.println("Name user = " + properties.getProperty("name"));
+        System.out.println("Birthday user = " + properties.getProperty("birthday"));
 
         properties.put("dbpassword", "NEWpassword");
         properties.put("database", "NEWlocalhost");
+        properties.put("dbuser", "NEWuser");
+        properties.put("dbuser", "NEWuser");
         properties.put("dbuser", "NEWuser");
         System.out.println("New Database password = " + properties.getProperty("dbpassword"));
         System.out.println("New Database name = " + properties.getProperty("database"));
