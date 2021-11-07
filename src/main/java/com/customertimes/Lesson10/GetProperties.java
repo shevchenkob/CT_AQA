@@ -1,10 +1,14 @@
 package com.customertimes.Lesson10;
 
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
 public class GetProperties {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
     public static void main(String[] args) {
 
         Properties properties = new Properties();
@@ -13,20 +17,21 @@ public class GetProperties {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("Database password = " + properties.getProperty("dbpassword"));
-        System.out.println("Database name = " + properties.getProperty("database"));
-        System.out.println("Database user = " + properties.getProperty("dbuser"));
-        System.out.println("Name user = " + properties.getProperty("name"));
-        System.out.println("Birthday user = " + properties.getProperty("birthday"));
+
+        LOGGER.info("Database password = " + properties.getProperty("dbpassword"));
+        LOGGER.info("Database name = " + properties.getProperty("database"));
+        LOGGER.info("Database user = " + properties.getProperty("dbuser"));
+        LOGGER.info("Name user = " + properties.getProperty("name"));
+        LOGGER.info("Birthday user = " + properties.getProperty("birthday"));
 
         properties.put("dbpassword", "NEWpassword");
         properties.put("database", "NEWlocalhost");
         properties.put("dbuser", "NEWuser");
         properties.put("dbuser", "NEWuser");
         properties.put("dbuser", "NEWuser");
-        System.out.println("New Database password = " + properties.getProperty("dbpassword"));
-        System.out.println("New Database name = " + properties.getProperty("database"));
-        System.out.println("New Database user = " + properties.getProperty("dbuser"));
+        LOGGER.info("New Database password = " + properties.getProperty("dbpassword"));
+        LOGGER.info("New Database name = " + properties.getProperty("database"));
+        LOGGER.info("New Database user = " + properties.getProperty("dbuser"));
 
     }
 }

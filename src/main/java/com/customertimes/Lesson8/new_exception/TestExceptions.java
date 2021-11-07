@@ -1,7 +1,10 @@
 package com.customertimes.Lesson8.new_exception;
 
-public class TestExceptions {
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
 
+public class TestExceptions {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
     public static void main(String... args) {
         int myDigit = 5;
         int[] myArr = {1, 2, 3};
@@ -10,27 +13,27 @@ public class TestExceptions {
                 int myNull = 0;
                 int a = 5 / myNull;
             } catch (ArithmeticException e) {
-                System.out.println ("You Shouldn't divide a number by zero");
+                LOGGER.info("You Shouldn't divide a number by zero");
 
             } finally {
-                System.out.println("This text always shown after first exception"); }
+                LOGGER.info("This text always shown after first exception"); }
 
             try {
                 int a[]=new int[10];
                 a[11] = 9;
             }
             catch(ArrayIndexOutOfBoundsException e){
-                System.out.println ("ArrayIndexOutOfBounds");
+                LOGGER.info("ArrayIndexOutOfBounds");
             } finally {
-                System.out.println("This text always shown after second exception"); }
+                LOGGER.info("This text always shown after second exception"); }
 
             try {
                 String str=null;
-                System.out.println (str.length());
+                LOGGER.info(str.length());
             } catch (NullPointerException e) {
-                System.out.println("Null Pointer Exception");
+                LOGGER.info("Null Pointer Exception");
             } finally {
-                System.out.println("This text always shown after third exception"); }
+                LOGGER.info("This text always shown after third exception"); }
 
 
 

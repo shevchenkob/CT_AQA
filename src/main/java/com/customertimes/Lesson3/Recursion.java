@@ -1,6 +1,10 @@
 package com.customertimes.Lesson3;
 
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
+
 public class Recursion {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
     public static int recurs(int i){
         if (i > 10) {
             return recurs(i++);
@@ -16,7 +20,7 @@ public class Recursion {
     }
 
     public static void main(String[] args) {
-        System.out.println(recurs(5));
-        System.out.println(factorial(4));
+        LOGGER.info(recurs(5));
+        LOGGER.info(factorial(4));
     }
 }

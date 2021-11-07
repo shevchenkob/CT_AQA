@@ -1,12 +1,15 @@
 package com.customertimes.Lesson9;
 
+import com.customertimes.Lesson11.MyLogger;
 import com.customertimes.Lesson4.personals_enums.DoctorsEnum;
 import com.customertimes.Lesson4.personals_enums.NurseEnum;
+import org.apache.log4j.Logger;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 public class MyJSON {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
 
     public static void main(String[] args) {
         parseObjectToJSON();
@@ -76,15 +79,14 @@ public class MyJSON {
 
         PersonalModel model = Jackson.parseJSONToObject(filePath);
 
-        System.out.println("Name: " + model.getName());
-        System.out.println("Birthday: " + model.getDateOfBirth());
-        System.out.println("Id is: " + model.getId());
-        System.out.println("Squad is: " + model.getAmbulancePersonalModel().getSquad());
-        System.out.println("Stamp is: " + model.getHospitalPersonalModel().getAccountantModel().getStamp());
-        System.out.println("Category is: " + model.getAmbulancePersonalModel().getNursesModel().getCategory());
-        System.out.println("Department is: " + model.getHospitalPersonalModel().getDepartment());
-        System.out.println("Workplace is: " + model.getHospitalPersonalModel().getAdministratorsModel().getWorkplace());
-        System.out.println("Drugs is: " + model.getHospitalPersonalModel().getPharmacistModel().getDrugs());
-        //System.out.println("Stamp is: " + model.getAmbulancePersonalModel().getDoctorsModel().
+        LOGGER.info("Name: " + model.getName());
+        LOGGER.info("Birthday: " + model.getDateOfBirth());
+        LOGGER.info("Id is: " + model.getId());
+        LOGGER.info("Squad is: " + model.getAmbulancePersonalModel().getSquad());
+        LOGGER.info("Stamp is: " + model.getHospitalPersonalModel().getAccountantModel().getStamp());
+        LOGGER.info("Category is: " + model.getAmbulancePersonalModel().getNursesModel().getCategory());
+        LOGGER.info("Department is: " + model.getHospitalPersonalModel().getDepartment());
+        LOGGER.info("Workplace is: " + model.getHospitalPersonalModel().getAdministratorsModel().getWorkplace());
+        LOGGER.info("Drugs is: " + model.getHospitalPersonalModel().getPharmacistModel().getDrugs());
     }
 }

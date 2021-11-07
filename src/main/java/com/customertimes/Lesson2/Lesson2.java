@@ -1,11 +1,15 @@
 package com.customertimes.Lesson2;
 
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
+
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.EnumMap;
 import java.util.List;
 
 public class Lesson2 {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
 
     public static void main(String[] args) {
         multipleParams(1, "lalala", 'a', true, (short) 20, new String[]{"A", "B", "C"});
@@ -17,7 +21,7 @@ public class Lesson2 {
         num2 = 15;
         System.out.println("num1= " + num1 + " num2= " + num2);
         result = num1 % num2;
-        System.out.println("The result after modulus operation is : " + result);
+        LOGGER.info("The result after modulus operation is : " + result);
 
         /* Increment */
         /*
@@ -25,14 +29,14 @@ public class Lesson2 {
         */
         int a, b = 7;
         a = ++b;
-        System.out.println("a = " + a + " b = " + b);
+        LOGGER.info( + a + " b = " + b);
 
         /*
         Here we first make "c" became "c", so "a" = c and then add 1 to "d", so d=8.
         */
         int c, d = 7;
         c = d++;
-        System.out.println("c = " + c + " d = " + d);
+        LOGGER.info("c = " + c + " d = " + d);
 
         /* Decrement */
 
@@ -41,7 +45,7 @@ public class Lesson2 {
         int f = 5;
         int q = 10 + --e;
         int t = 10 + f--;
-        System.out.println("q is: " + q + "t is: " + t);
+        LOGGER.info("q is: " + q + "t is: " + t);
 
     }
 
@@ -57,19 +61,19 @@ public class Lesson2 {
     public static void doWhileMethod() {
         int i = 4;
         do {
-            System.out.println("Now it is number: " + i);
+            LOGGER.info("Now it is number: " + i);
             i++;
         }
         while (i < 10);
         /* Why this out returned only once in output with only 10 digit? */
-        System.out.println(i);
+        LOGGER.info(i);
 
     }
 
     public static void forMethod() {
         String input = "lalala";
         for (int i = 0; i < input.length(); i++) {
-            System.out.println(input.charAt(i));
+            LOGGER.info(input.charAt(i));
         }
     }
 
@@ -77,7 +81,7 @@ public class Lesson2 {
         int i = 5;
         int a = 4;
         while (i < 10 || a < 10) {
-            System.out.println("Operator || result:" + "i= " + i + "  a= " + a);
+            LOGGER.info("Operator || result:" + "i= " + i + "  a= " + a);
             i++;
             a++;
         }
@@ -85,7 +89,7 @@ public class Lesson2 {
         int b = 5;
         int c = 4;
         while (b < 10 && c < 10) {
-            System.out.println("Operator && result:" + "b= " + b + "  c= " + c);
+            LOGGER.info("Operator && result:" + "b= " + b + "  c= " + c);
             b++;
             c++;
         }
@@ -113,53 +117,53 @@ public class Lesson2 {
         int getMonth = Calendar.getInstance().get(Calendar.MONTH);
         switch (getMonth) {
             case 1:
-                System.out.println("January");
+                LOGGER.info("January");
                 break;
             case 2:
-                System.out.println("February");
+                LOGGER.info("February");
                 break;
             case 3:
-                System.out.println("March");
+                LOGGER.info("March");
                 break;
             case 4:
-                System.out.println("April");
+                LOGGER.info("April");
                 break;
             case 5:
-                System.out.println("May");
+                LOGGER.info("May");
                 break;
             case 6:
-                System.out.println("June");
+                LOGGER.info("June");
                 break;
             case 7:
-                System.out.println("July");
+                LOGGER.info("July");
                 break;
             case 8:
-                System.out.println("August");
+                LOGGER.info("August");
                 break;
             case 9:
-                System.out.println("September");
+                LOGGER.info("September");
                 break;
             case 10:
-                System.out.println("October");
+                LOGGER.info("October");
                 break;
             case 11:
-                System.out.println("November");
+                LOGGER.info("November");
                 break;
             case 12:
-                System.out.println("December");
+                LOGGER.info("December");
                 break;
         }
     }
 
     public static void multipleParams(int number, String word, char sign, boolean myBolean, short myShort, String[] myArray) {
-        System.out.println("My number is: " + number);
-        System.out.println("My string is: " + word);
-        System.out.println("My char is: " + sign);
-        System.out.println("My boolean is: " + myBolean);
-        System.out.println("My short numb is: " + myShort);
+        LOGGER.info("My number is: " + number);
+        LOGGER.info("My string is: " + word);
+        LOGGER.info("My char is: " + sign);
+        LOGGER.info("My boolean is: " + myBolean);
+        LOGGER.info("My short numb is: " + myShort);
         //System.out.println("My array is: " + Arrays.toString(myArray));
         List<String> arrayList = Arrays.asList(myArray);
-        System.out.println("My array is: " + arrayList);
+        LOGGER.info("My array is: " + arrayList);
 
     }
 

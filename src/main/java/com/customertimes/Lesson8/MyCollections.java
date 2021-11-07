@@ -1,8 +1,12 @@
 package com.customertimes.Lesson8;
 
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
+
 import java.util.*;
 
 public class MyCollections {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
 
     public static void main(String[] args) {
         // myArrayList();
@@ -26,7 +30,7 @@ public class MyCollections {
         myArray.add(9, "Lexus");
 
         for (int i = 0; i < myArray.size(); i++) {
-            System.out.println(myArray.get(i) + "_" + i);
+            LOGGER.info(myArray.get(i) + "_" + i);
         }
     }
 
@@ -43,13 +47,13 @@ public class MyCollections {
         list.add("Rabbit");
         list.add("Bull");
 
-        System.out.println("List before removing: " + list);
+        LOGGER.info("List before removing: " + list);
 
         list.remove(2);
         list.remove(3);
         list.remove(5);
 
-        System.out.println("List after removing: " + list);
+        LOGGER.info("List after removing: " + list);
 
     }
 
@@ -79,7 +83,7 @@ public class MyCollections {
         while (it.hasNext()) {
             CurrentElement = it.next();
             if (currIndex == index - 1) {
-                System.out.println("Element at index " + index + " is: " + CurrentElement);
+                LOGGER.info("Element at index " + index + " is: " + CurrentElement);
                 break;
             }
             currIndex++;
@@ -101,17 +105,17 @@ public class MyCollections {
         hashmap.put("10", "ten");
 
         /* Output to console the 3rd element by key  */
-        System.out.println(hashmap.get("3"));
+        LOGGER.info(hashmap.get("3"));
 
         /* Output to console the 4st element by value */
         for (Map.Entry<String, String> entry : hashmap.entrySet()) {
             if (entry.getValue().equals("four")) {
-                System.out.println(entry.getKey());
+                LOGGER.info(entry.getKey());
             }
         }
 
         /* Output to console each element by key. */
-        hashmap.forEach((key, value) -> System.out.println(key + ":" + value));
+        hashmap.forEach((key, value) -> LOGGER.info(key + ":" + value));
 
     }
 }

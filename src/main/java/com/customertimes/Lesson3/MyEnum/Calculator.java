@@ -1,9 +1,14 @@
 package com.customertimes.Lesson3.MyEnum;
 
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
+
 public class Calculator {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
+
 
     public static void main(String[] args) {
-        System.out.println(calculate(EnumCalculator.DIVISION, 3, 1, 5));
+        LOGGER.info(calculate(EnumCalculator.DIVISION, 3, 1, 5));
     }
 
     private static double calculate (EnumCalculator operation, int... i) {
@@ -21,7 +26,7 @@ public class Calculator {
                     break;
                 case DIVISION:
                     if (j == 0){
-                        System.out.println("It is protected to division by 0.");
+                        LOGGER.info("It is protected to division by 0.");
                         break;
                     } else {
                         j /= i[k];

@@ -1,8 +1,12 @@
 package com.customertimes.Lesson3;
 
+import com.customertimes.Lesson11.MyLogger;
+import org.apache.log4j.Logger;
+
 import java.util.Arrays;
 
 public class Lesson3personaltask {
+    private static final Logger LOGGER = Logger.getLogger(MyLogger.class);
 
     public static void avverageInArray() {
         int[] myArray = {1, 2, 3, 99, 4};
@@ -20,7 +24,7 @@ public class Lesson3personaltask {
         int firstNum = myArray[0];
         int lastNum = myArray[myArray.length - 1];
         int avgSum = (firstNum + lastNum) / 2;
-        System.out.println("Average of max and min number: " + avgSum);
+        LOGGER.info("Average of max and min number: " + avgSum);
 
     }
 
