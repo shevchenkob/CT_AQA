@@ -1,0 +1,76 @@
+2021-11-07 23:17:03 INFO  MyLogger:10 - output
+2021-11-07 23:21:06 [main] INFO  MyLogger:10 - output
+2021-11-07 23:21:53 [main] INFO  MyLogger:10 - output
+2021-11-07 23:22:31 [main] INFO  com.customertimes.Lesson11.MyLogger:10  - output
+2021-11-07 23:22:44 [main] INFO  com.customertimes.Lesson11.MyLogger:10  - output
+2021-11-07 23:23:14 [main] INFO  com.customertimes.Lesson11.MyLogger:10  - output
+2021-11-08 00:25:38 [main] INFO  com.customertimes.Lesson11.MyLogger:10  - output
+2021-11-08 00:31:40 [main] INFO  com.customertimes.Lesson11.MyLogger:21  - LOGGER Database password = password
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:21  - Database password = password
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:22  - Database name = localhost
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:23  - Database user = user
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:24  - Name user = Petya
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:25  - Birthday user = 2000
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:32  - New Database password = NEWpassword
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:33  - New Database name = NEWlocalhost
+2021-11-08 00:32:47 [main] INFO  com.customertimes.Lesson11.MyLogger:34  - New Database user = NEWuser
+2021-11-08 00:33:59 [main] INFO  com.customertimes.Lesson11.MyLogger:82  - Name: VasyaNEW
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:82  - Name: VasyaNEW
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:83  - Birthday: 1985123
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:84  - Id is: 11
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:85  - Squad is: squad1NEW
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:86  - Stamp is: signStampNEW
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:87  - Category is: FIRST_CATEGORY
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:88  - Department is: testNEW
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:89  - Workplace is: receptionNEW
+2021-11-08 00:35:41 [main] INFO  com.customertimes.Lesson11.MyLogger:90  - Drugs is: pillsNEW
+2021-11-08 00:36:58 [main] INFO  com.customertimes.Lesson11.MyLogger:15  - IntelliJ Java Community Java Edition 2021.2
+2021-11-08 00:36:58 [main] INFO  com.customertimes.Lesson11.MyLogger:18  - newIntelliJ IDEA newCommunity IDEA newEdition 2021.2
+2021-11-08 00:36:58 [main] INFO  com.customertimes.Lesson11.MyLogger:21  - 8ntelliJ 8DEA Community 8DEA Edition 2021.2
+2021-11-08 00:36:58 [main] INFO  com.customertimes.Lesson11.MyLogger:24  - IntelliJ_IDEA_Community_IDEA_Edition_2021_2
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:108  - three
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:113  - 4
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 1:one
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 2:six
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 3:three
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 4:four
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 5:five
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 7:seven
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 8:eight
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 9:nine
+2021-11-08 00:38:26 [main] INFO  com.customertimes.Lesson11.MyLogger:118  - 10:ten
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:45  - Strings, which are widely used in Java programming, are a sequence of characters. In the Java programming language, strings are objects.
+The Java platform provides the String class to create and manipulate strings.
+In this case, "Hello world!" is a string literal—a series of characters in your code that is enclosed in double quotes. Whenever it encounters a string literal in your code, the compiler creates a String object with its value—in this case, Hello world!.
+As with any other object, you can create String objects by using the new keyword and a constructor. The String class has thirteen constructors that allow you to provide the initial value of the string using different sources, such as an array of characters:
+
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:50  - Number of paragraphs: 4
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:54  - Number of words: 124
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:57  - Number of sentences: 7
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:64  - Number of characters: 586
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:67  - Number of wordsInParagraph1: 21
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:70  - Number of wordsInParagraph1: 10
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:73  - Number of wordsInParagraph1: 43
+2021-11-08 00:41:32 [main] INFO  com.customertimes.Lesson11.MyLogger:76  - Number of wordsInParagraph1: 38
+2021-11-08 00:45:03 [main] INFO  com.customertimes.Lesson11.MyLogger:24  - Date and time after formatting: 2021/ноября/воскресенье 14:45 America/Los_Angeles
+2021-11-08 00:45:04 [main] INFO  com.customertimes.Lesson11.MyLogger:33  - Formatted from string: Fri Aug 22 12:30:01 EEST 1986
+2021-11-08 00:49:43 [main] INFO  com.customertimes.Lesson11.MyLogger:25  - Values of my params: 1, s, some text, true
+2021-11-08 00:54:29 [main] INFO  com.customertimes.Lesson11.MyLogger:11  - 0.6
+2021-11-08 00:58:05 [main] INFO  com.customertimes.Lesson11.MyLogger:159  - My number is: 1
+2021-11-08 00:58:05 [main] INFO  com.customertimes.Lesson11.MyLogger:160  - My string is: lalala
+2021-11-08 00:58:05 [main] INFO  com.customertimes.Lesson11.MyLogger:161  - My char is: a
+2021-11-08 00:58:05 [main] INFO  com.customertimes.Lesson11.MyLogger:162  - My boolean is: true
+2021-11-08 00:58:05 [main] INFO  com.customertimes.Lesson11.MyLogger:163  - My short numb is: 20
+2021-11-08 00:58:05 [main] INFO  com.customertimes.Lesson11.MyLogger:166  - My array is: [A, B, C]
+2021-11-08 01:01:04 [main] INFO  com.customertimes.Lesson11.MyLogger:122  - false
+2021-11-08 01:01:04 [main] INFO  com.customertimes.Lesson11.MyLogger:126  - [1, 2, 3]
+2021-11-08 01:01:04 [main] INFO  com.customertimes.Lesson11.MyLogger:130  - [1, 2, 3]
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:82  - Name: VasyaNEW
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:83  - Birthday: 1985123
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:84  - Id is: 11
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:85  - Squad is: squad1NEW
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:86  - Stamp is: signStampNEW
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:87  - Category is: FIRST_CATEGORY
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:88  - Department is: testNEW
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:89  - Workplace is: receptionNEW
+2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:90  - Drugs is: pillsNEW
