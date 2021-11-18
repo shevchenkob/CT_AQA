@@ -11,12 +11,14 @@ public class BaseTest {
 
     @BeforeSuite
     public void beforeSuit() {
+        System.out.println("Test started");
         driver = WebDriverRunner.getWebDriver();
                 //WebDriverManager.chromedriver().create();
     }
 
     @AfterSuite
     public void afterSuit() {
+        System.out.println("Test finished");
         WebDriverRunner.closeWebDriver();
         //driver.quit();
     }
