@@ -1,5 +1,6 @@
 package com.customertimes;
 
+import com.customertimes.framework.driver.WebDriverRunner;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
@@ -10,12 +11,14 @@ public class BaseTest {
 
     @BeforeSuite
     public void beforeSuit() {
-        driver = WebDriverManager.chromedriver().create();
+        driver = WebDriverRunner.getWebDriver();
+                //WebDriverManager.chromedriver().create();
     }
 
     @AfterSuite
     public void afterSuit() {
-        driver.quit();
+        WebDriverRunner.closeWebDriver();
+        //driver.quit();
     }
 
 }
