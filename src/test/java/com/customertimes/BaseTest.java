@@ -10,7 +10,7 @@ public class BaseTest {
 
     @BeforeSuite
     public void beforeSuit() {
-        driver = WebDriverManager.chromiumdriver().create();
+        driver = WebDriverManager.chromedriver().create();
     }
 
     @AfterSuite
