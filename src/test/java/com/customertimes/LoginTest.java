@@ -53,8 +53,4 @@ public class LoginTest extends BaseTest {
 
     }
 
-    public boolean wrongSfLogin() {
-        WebElement errorMessageSalesforceLogin = driver.findElement(By.cssSelector("#error"));
-        return driver.equals(errorMessageSalesforceLogin);
-    }
 }
