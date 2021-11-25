@@ -33,8 +33,6 @@ public class CopyPasteTest extends BaseTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //String textFromPage = driver.findElement(By.xpath("//a[@class='color-fg-on-emphasis']")).getText();
-        //System.out.println(textFromPage);
 
         WebElement emailField = driver.findElement(By.xpath("//input[@id='email']"));
         emailField.sendKeys(email);
