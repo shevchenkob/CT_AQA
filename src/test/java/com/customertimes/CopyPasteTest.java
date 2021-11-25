@@ -11,12 +11,10 @@ import javax.swing.*;
 import java.security.Key;
 
 public class CopyPasteTest extends BaseTest {
-    @Test(description = "successRegistr")
-    public void successRegistr() {
+    @Test(description = "CopyPasteTest")
+    public void CopyPasteTest() {
         Faker faker = new Faker();
         String email = faker.internet().emailAddress();
-        String password = faker.internet().password();
-
 
         driver.get("https://github.com/");
         WebElement signInButton = driver.findElement(By.xpath("//a[@class='HeaderMenu-link flex-shrink-0 no-underline']"));
