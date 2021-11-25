@@ -59,4 +59,16 @@ public class CopyPasteTest extends BaseTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void getText() {
+
+        String expectedText = "sign in";
+        driver.get("https://github.com/");
+        String signInTextButton = driver.findElement(By.xpath("//a[@class='HeaderMenu-link flex-shrink-0 no-underline']")).getText();
+        if (signInTextButton.equalsIgnoreCase(expectedText))
+            System.out.println("Actual text equal expected ignored case");
+        else System.out.println("Actual text doesn't match the expected ignored case");
+
+    }
 }
