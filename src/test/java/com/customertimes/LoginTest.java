@@ -10,8 +10,43 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-    @Test(description = "loginOne")
-    public void loginOne() throws InterruptedException {
+    @DataProvider (name = "data-provider1")
+    public Object[][] ValidData() {
+        return new Object[][]{
+                {"johndoeseleniumtest1@gmail.com", "johndoepassword"}  };
+    }
+
+    @Test (dataProvider= "data-provider1")
+    public void positiveLoginOne(String userEmail, String userPassword) {
+        driver.get("https://www.linkedin.com/");
+        WebElement enterButton = driver.findElement(By.xpath("//a[@class='nav__button-secondary']"));
+        enterButton.click();
+        try {
+            Thread.sleep(3_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement emailField = driver.findElement(By.xpath("//input[@id='username']"));
+        emailField.sendKeys(userEmail);
+        WebElement passwordFiel = driver.findElement(By.xpath("//input[@id='password']"));
+        passwordFiel.sendKeys(userPassword);
+        try {
+            Thread.sleep(3_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        WebElement submitButton = driver.findElement(By.xpath("//button[@type='submit']"));
+        submitButton.click();
+        try {
+            Thread.sleep(3_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    @Test(description = "negativeLoginOne")
+    public void negativeLoginOne() throws InterruptedException {
 
         Faker faker = new Faker();
         String email = faker.internet().emailAddress();
@@ -25,16 +60,14 @@ public class LoginTest extends BaseTest {
         WebElement submitButton = driver.findElement(By.className("sign-in-form__submit-button"));
         submitButton.click();
         Thread.sleep(2_000);
-        Assert.assertTrue(isLinkedinCheckYouPageLoaded(), "Negative login test failed");
+        boolean isCorrectUrl = driver.getCurrentUrl().contains("https://www.linkedin.com/checkpoint/challenge/");
+        Assert.assertTrue(isCorrectUrl, "Negative login test failed");
 
     }
 
-    public boolean isLinkedinCheckYouPageLoaded() {
-        return driver.getCurrentUrl().contains("https://www.linkedin.com/checkpoint/challenge/");
-    }
 
-    @Test
-    public void loginTwo() throws InterruptedException {
+    @Test (description = "negativeLoginTwo")
+    public void negativeLoginTwo() throws InterruptedException {
 
         Faker faker = new Faker();
         String email = faker.internet().emailAddress();
@@ -47,7 +80,7 @@ public class LoginTest extends BaseTest {
         passwordFieldSF.sendKeys(password);
         WebElement submitLoginSF = driver.findElement(By.cssSelector("#Login"));
         submitLoginSF.click();
-        Thread.sleep(20_000);
+        Thread.sleep(10_000);
         WebElement errorMessageSalesforceLogin = driver.findElement(By.cssSelector("#error"));
         Assert.assertEquals(true, errorMessageSalesforceLogin.isDisplayed());
 

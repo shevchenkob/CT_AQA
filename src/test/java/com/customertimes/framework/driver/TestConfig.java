@@ -1,4 +1,4 @@
-package com.customertimes.framework;
+package com.customertimes.framework.driver;
 
 import org.aeonbits.owner.Config;
 import org.aeonbits.owner.ConfigFactory;
