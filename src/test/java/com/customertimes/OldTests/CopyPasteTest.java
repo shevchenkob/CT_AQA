@@ -1,14 +1,12 @@
-package com.customertimes;
+package com.customertimes.OldTests;
 
+import com.customertimes.Tests.BaseTest;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
-import java.security.Key;
 
 public class CopyPasteTest extends BaseTest {
     @Test(description = "CopyPasteTest")

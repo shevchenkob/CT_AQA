@@ -1,12 +1,12 @@
-package com.customertimes;
+package com.customertimes.OldTests;
 
+import com.customertimes.Tests.BaseTest;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Wait;
 import org.testng.annotations.Test;
 
-public class RegistrTest extends BaseTest{
+public class RegistrTest extends BaseTest {
 
     @Test(description = "successRegistr")
     public void successRegistr(){

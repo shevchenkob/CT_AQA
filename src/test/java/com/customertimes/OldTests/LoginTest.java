@@ -1,9 +1,9 @@
-package com.customertimes;
+package com.customertimes.OldTests;
 
+import com.customertimes.Tests.BaseTest;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

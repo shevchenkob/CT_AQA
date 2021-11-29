@@ -1,7 +1,6 @@
-package com.customertimes;
+package com.customertimes.OldTests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
+import com.customertimes.Tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
