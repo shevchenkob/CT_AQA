@@ -18,9 +18,11 @@ public class LoginTestOnliner extends BaseTest {
     @Test(dataProvider = "ValidData", priority = 1)
     public void successfulLoginTest(String userEmail, String userPassword) {
         LandingPageOnliner landingPageOnliner = new LandingPageOnliner(driver);
-        Assert.assertTrue(landingPageOnliner.isPageLoaded(), "Landing page is not loaded.");
-
+        Assert.assertTrue(landingPageOnliner.isPageLoaded(), "Page www.onliner.by is not loaded.");
         LoginPageOnliner loginPageOnliner = landingPageOnliner.navigateToLogin();
+        loginPageOnliner.login(userEmail, userPassword);
+
+
         //Assert.assertEquals(loginPageOnliner, "");
     }
 }
