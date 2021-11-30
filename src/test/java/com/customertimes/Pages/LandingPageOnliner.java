@@ -26,7 +26,7 @@ public class LandingPageOnliner extends BaseTest {
         enterButton.click();
 
         WebElement enterString = driver.findElement(By.xpath("//div[@class='auth-form__title auth-form__title_big auth-form__title_condensed-default']"));
-        waitUntilElementIsWisible(enterButton, 3);
+        waitUntilElementIsWisible(enterString, 3);
         enterString.isDisplayed();
         if (enterString.isDisplayed()) {
             return (GenericPage) new LoginPageOnliner(driver);
