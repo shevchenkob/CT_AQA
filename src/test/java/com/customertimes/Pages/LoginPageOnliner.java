@@ -16,6 +16,9 @@ public class LoginPageOnliner extends BaseTest {
     @FindBy(xpath = "//button[@class='auth-button auth-button_primary auth-button_middle auth-form__button auth-form__button_width_full']")
     private WebElement submitButton;
 
+    @FindBy(xpath = "//div[@class='b-top-profile__image js-header-user-avatar']")
+    private WebElement profileButton;
+
 
     public LoginPageOnliner(WebDriver driver) {
         this.driver = driver;
@@ -28,5 +31,10 @@ public class LoginPageOnliner extends BaseTest {
         passwordField.sendKeys(userPassword);
         submitButton.click();
         return (GenericPage) new LoginPageOnliner(driver);
+    }
+
+    public boolean isPageLoaded() {
+        waitUntilElementIsWisible(profileButton, 3);
+        return profileButton.isDisplayed();
     }
 }

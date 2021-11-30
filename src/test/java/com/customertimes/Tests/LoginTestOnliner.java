@@ -21,8 +21,7 @@ public class LoginTestOnliner extends BaseTest {
         Assert.assertTrue(landingPageOnliner.isPageLoaded(), "Page www.onliner.by is not loaded.");
         LoginPageOnliner loginPageOnliner = landingPageOnliner.navigateToLogin();
         loginPageOnliner.login(userEmail, userPassword);
+        Assert.assertTrue(loginPageOnliner.isPageLoaded(), "User not logged in.");
 
-
-        //Assert.assertEquals(loginPageOnliner, "");
     }
 }
