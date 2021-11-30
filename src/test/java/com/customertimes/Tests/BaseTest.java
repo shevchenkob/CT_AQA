@@ -16,7 +16,8 @@ public class BaseTest {
     public void beforeSuit() {
         System.out.println("Test started");
         driver = WebDriverRunner.getWebDriver();
-        driver.get("https://www.onliner.by/");
+        //driver.get("https://www.onliner.by/");
+        driver.get("https://www.21vek.by/");
                 //WebDriverManager.chromedriver().create();
     }
 

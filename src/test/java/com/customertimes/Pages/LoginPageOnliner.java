@@ -34,7 +34,7 @@ public class LoginPageOnliner extends BaseTest {
     }
 
     public boolean isPageLoaded() {
-        waitUntilElementIsWisible(profileButton, 3);
+        waitUntilElementIsWisible(profileButton, 5);
         return profileButton.isDisplayed();
     }
 }
