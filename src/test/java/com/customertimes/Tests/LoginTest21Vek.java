@@ -20,6 +20,7 @@ public class LoginTest21Vek extends BaseTest {
         Assert.assertTrue(landingPage21Vek.isPageLoaded(), "Page https://www.21vek.by/ is not loaded.");
         landingPage21Vek.login(userEmail, userPassword);
         Assert.assertTrue(landingPage21Vek.isLoginSuccessfull(), "Login to https://www.21vek.by/ not successful");
+
     }
 
 }
