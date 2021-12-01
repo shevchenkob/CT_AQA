@@ -1,12 +1,13 @@
 package com.customertimes.Tests;
 
+import com.customertimes.Pages.BasePage;
 import com.customertimes.Pages.LandingPageOnliner;
 import com.customertimes.Pages.LoginPageOnliner;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class LoginTestOnliner extends BaseTest {
+public class LoginTestOnliner extends BasePage {
 
     @DataProvider
     public Object[][] ValidData() {

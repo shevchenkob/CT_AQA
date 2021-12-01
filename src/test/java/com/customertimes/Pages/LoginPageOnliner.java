@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPageOnliner extends BaseTest {
+public class LoginPageOnliner extends BasePage {
     @FindBy(xpath = "//input[@placeholder='Ник или e-mail']")
     private WebElement loginField;
 

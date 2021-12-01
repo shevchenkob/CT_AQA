@@ -1,6 +1,7 @@
 package com.customertimes.Pages;
 
 import com.customertimes.Tests.BaseTest;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -40,6 +41,12 @@ public class LandingPage21Vek extends BaseTest {
         userLoginField.sendKeys(userEmail);
         userPasswordField.sendKeys(userPassword);
         enterButton.click();
+       // waitUntilElementIsClickable(myAccauntButton, 5);
+        try {
+            Thread.sleep(7_000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return (GenericPage) new LandingPage21Vek(driver);
 
     }
@@ -50,8 +57,9 @@ public class LandingPage21Vek extends BaseTest {
     }
 
     public boolean isLoginSuccessfull(){
-        waitUntilElementIsWisible(myAccauntButton, 3);
+        waitUntilElementIsClickable(myAccauntButton, 5);
         myAccauntButton.click();
+        waitUntilElementIsClickable(exitButton, 5);
         return exitButton.isDisplayed();
     }
 }
