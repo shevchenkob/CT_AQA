@@ -20,13 +20,19 @@ public class ProductsPage21Vek extends BaseTest {
     @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/page:2/']")
     private WebElement page2Button;
 
+    @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/rb34t670fbnwt_samsung.html']")
+    private WebElement sumsungFridgeButton;
+
+    @FindBy(xpath = "//span[@name='2']")
+    private WebElement selectedPageTwoButton;
+
 
     public ProductsPage21Vek(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public <GenericPage> GenericPage shopFridge() {
+    public <GenericPage> GenericPage navigateToSecondPage() {
         waitUntilElementIsWisible(myAccauntButton, 3);
         fridgesButton.click();
         waitUntilElementIsWisible(myAccauntButton, 5);
@@ -35,6 +41,9 @@ public class ProductsPage21Vek extends BaseTest {
         actions.perform();
         waitUntilElementIsClickable(page2Button, 5);
         page2Button.click();
+        waitUntilElementIsClickable(sumsungFridgeButton, 5);
+
+
 
         try {
             Thread.sleep(7_000);
@@ -43,5 +52,14 @@ public class ProductsPage21Vek extends BaseTest {
         }
 
         return (GenericPage) new ProductsPage21Vek(driver);
+    }
+
+    public <GenericPage> GenericPage shopFridge() {
+        sumsungFridgeButton.click();
+        return (GenericPage) new OneProductPage21Vek(driver);
+    }
+
+    public boolean isPageLoaded() {
+       return selectedPageTwoButton.isDisplayed();
     }
 }
