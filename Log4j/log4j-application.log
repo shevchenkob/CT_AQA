@@ -74,3 +74,11 @@ As with any other object, you can create String objects by using the new key
 2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:88  - Department is: testNEW
 2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:89  - Workplace is: receptionNEW
 2021-11-08 23:59:04 [main] INFO  com.customertimes.Lesson11.MyLogger:90  - Drugs is: pillsNEW
+2021-12-07 14:37:29 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-07 14:37:49 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_07_12_14_37_49.avi
+2021-12-07 14:37:49 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-07 14:37:49 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_07_12_14_37_49.avi
+2021-12-07 14:41:32 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-07 14:41:53 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_07_12_14_41_53.avi
+2021-12-07 14:41:53 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-07 14:41:53 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_07_12_14_41_53.avi
