@@ -1,13 +1,12 @@
 package com.customertimes.Pages;
 
 import com.customertimes.Tests.BaseTest;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LandingPage21Vek extends BaseTest {
+public class LandingPage extends BaseTest {
 
     @FindBy(xpath = "//button[@class='styles_userToolsToggler__imcSl']")
     private WebElement myAccauntButton;
@@ -27,27 +26,26 @@ public class LandingPage21Vek extends BaseTest {
     @FindBy(xpath = "//div[@class='ProfileItem_itemText__Qz7I0']")
     private WebElement exitButton;
 
-    public LandingPage21Vek(WebDriver driver) {
+    public LandingPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
     public <GenericPage> GenericPage login(String userEmail, String userPassword) {
-        waitUntilElementIsWisible(myAccauntButton, 3);
-        myAccauntButton.click();
-        waitUntilElementIsWisible(toEnterButton, 3);
-        toEnterButton.click();
         waitUntilElementIsWisible(userLoginField, 3);
         userLoginField.sendKeys(userEmail);
         userPasswordField.sendKeys(userPassword);
         enterButton.click();
-       // waitUntilElementIsClickable(myAccauntButton, 5);
+       // waitUntilElementIsClickable(myAccauntButton, 5); /* not working, just sleep works */
+
+//        new WebDriverWait(driver, pageLoadTimeout).until(
+//                webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
         try {
             Thread.sleep(7_000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        return (GenericPage) new LandingPage21Vek(driver);
+       return (GenericPage) new LandingPage(driver);
 
     }
 

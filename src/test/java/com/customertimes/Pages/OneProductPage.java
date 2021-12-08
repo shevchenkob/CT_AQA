@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class OneProductPage21Vek extends BaseTest {
+public class OneProductPage extends BaseTest {
 
     @FindBy(xpath = "//button[@data-ga_action='add_to_cart']")
     private WebElement buyButton;
@@ -22,7 +22,7 @@ public class OneProductPage21Vek extends BaseTest {
 
 
 
-    public OneProductPage21Vek(WebDriver driver) {
+    public OneProductPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -33,7 +33,7 @@ public class OneProductPage21Vek extends BaseTest {
         basketHeader.click();
         waitUntilElementIsWisible(createOrder, 3);
         createOrder.click();
-        return (GenericPage) new OneProductPage21Vek(driver);
+        return (GenericPage) new OneProductPage(driver);
     }
 
     public boolean isPageLoaded() {

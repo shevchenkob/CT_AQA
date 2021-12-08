@@ -7,9 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import javax.swing.*;
-
-public class ProductsPage21Vek extends BaseTest {
+public class ProductsPage extends BaseTest {
 
     @FindBy(xpath = "//button[@class='styles_userToolsToggler__imcSl']")
     private WebElement myAccauntButton;
@@ -27,7 +25,7 @@ public class ProductsPage21Vek extends BaseTest {
     private WebElement selectedPageTwoButton;
 
 
-    public ProductsPage21Vek(WebDriver driver) {
+    public ProductsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
@@ -51,12 +49,12 @@ public class ProductsPage21Vek extends BaseTest {
             e.printStackTrace();
         }
 
-        return (GenericPage) new ProductsPage21Vek(driver);
+        return (GenericPage) new ProductsPage(driver);
     }
 
     public <GenericPage> GenericPage shopFridge() {
         sumsungFridgeButton.click();
-        return (GenericPage) new OneProductPage21Vek(driver);
+        return (GenericPage) new OneProductPage(driver);
     }
 
     public boolean isPageLoaded() {
