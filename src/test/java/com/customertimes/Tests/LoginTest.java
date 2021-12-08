@@ -1,14 +1,21 @@
 package com.customertimes.Tests;
 
+import com.automation.remarks.testng.UniversalVideoListener;
+import com.automation.remarks.video.annotations.Video;
 import com.customertimes.Pages.HeaderPage;
 import com.customertimes.Pages.LandingPage;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(UniversalVideoListener.class)
 public class LoginTest extends BaseTest {
 
     @DataProvider
+    @Video
     public Object[][] ValidData() {
         return new Object[][]{
                 {"johndoeseleniumtest@gmail.com", "SW99ZQbk"}

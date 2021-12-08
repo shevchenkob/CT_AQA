@@ -2,6 +2,7 @@ package com.customertimes.Tests;
 
 import com.automation.remarks.testng.UniversalVideoListener;
 import com.automation.remarks.video.annotations.Video;
+import com.customertimes.Pages.HeaderPage;
 import com.customertimes.Pages.OneProductPage;
 import com.customertimes.Pages.ProductsPage;
 import org.apache.commons.io.FileUtils;
@@ -20,18 +21,17 @@ public class ShopTest extends BaseTest {
     @Test(priority = 1)
     @Video
     public void successfulLoginTest() throws IOException {
+        HeaderPage headerPage = new HeaderPage(driver);
+        headerPage.preOrder();
         ProductsPage productsPage = new ProductsPage(driver);
         productsPage.navigateToSecondPage();
         Assert.assertTrue(productsPage.isPageLoaded(), "Second page not loaded");
         productsPage.shopFridge();
         OneProductPage oneProductPage = new OneProductPage(driver);
-
-        File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
-
-        Assert.assertFalse(oneProductPage.isPageLoaded()); /* Here should be assert true */
+        Assert.assertTrue(oneProductPage.isPageLoaded()); /* Here should be assert false to record video */
         oneProductPage.buyFridge();
-
 
 
     }

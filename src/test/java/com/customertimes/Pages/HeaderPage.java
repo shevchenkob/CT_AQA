@@ -14,6 +14,9 @@ public class HeaderPage extends BaseTest {
     @FindBy(xpath = "//button[@class='userToolsBtn']")
     private WebElement toEnterButton;
 
+    @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/']")
+    private WebElement fridgesButton;
+
 
     public HeaderPage(WebDriver driver) {
         this.driver = driver;
@@ -27,5 +30,13 @@ public class HeaderPage extends BaseTest {
         toEnterButton.click();
 
         return (GenericPage) new LandingPage(driver);
+    }
+
+    public <GenericPage> GenericPage preOrder() {
+        waitUntilElementIsWisible(myAccauntButton, 3);
+        fridgesButton.click();
+        waitUntilElementIsWisible(myAccauntButton, 5);
+
+        return (GenericPage) new ProductsPage(driver);
     }
 }

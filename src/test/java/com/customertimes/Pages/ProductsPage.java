@@ -9,12 +9,6 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductsPage extends BaseTest {
 
-    @FindBy(xpath = "//button[@class='styles_userToolsToggler__imcSl']")
-    private WebElement myAccauntButton;
-
-    @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/']")
-    private WebElement fridgesButton;
-
     @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/page:2/']")
     private WebElement page2Button;
 
@@ -31,23 +25,12 @@ public class ProductsPage extends BaseTest {
     }
 
     public <GenericPage> GenericPage navigateToSecondPage() {
-        waitUntilElementIsWisible(myAccauntButton, 3);
-        fridgesButton.click();
-        waitUntilElementIsWisible(myAccauntButton, 5);
         Actions actions = new Actions(driver);
         actions.moveToElement(page2Button);
         actions.perform();
         waitUntilElementIsClickable(page2Button, 5);
         page2Button.click();
         waitUntilElementIsClickable(sumsungFridgeButton, 5);
-
-
-
-        try {
-            Thread.sleep(7_000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
         return (GenericPage) new ProductsPage(driver);
     }
@@ -58,6 +41,6 @@ public class ProductsPage extends BaseTest {
     }
 
     public boolean isPageLoaded() {
-       return selectedPageTwoButton.isDisplayed();
+        return selectedPageTwoButton.isDisplayed();
     }
 }
