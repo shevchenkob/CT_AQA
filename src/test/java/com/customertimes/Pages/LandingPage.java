@@ -1,14 +1,12 @@
 package com.customertimes.Pages;
 
-import com.customertimes.Tests.BaseTest;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LandingPage extends BaseTest {
+public class LandingPage extends BasePage {
 
     @FindBy(xpath = "//button[@class='styles_userToolsToggler__imcSl']")
     private WebElement myAccauntButton;
@@ -22,32 +20,47 @@ public class LandingPage extends BaseTest {
     @FindBy(xpath = "//input[@name='password']")
     private WebElement userPasswordField;
 
+    @FindBy(xpath = "//span[@class='lt-label-block__txt']")
+    private WebElement writeUsBorder;
+
     @FindBy(xpath = "//button[@class='styles_reactButton__2olKd style_baseActionButton__2LQYJ styles_submitButton__lmwVK']")
     private WebElement enterButton;
 
     @FindBy(xpath = "//div[@class='ProfileItem_itemText__Qz7I0']")
     private WebElement exitButton;
 
+    @FindBy(xpath = "//div[@class='style_actions__2mIsz']/button")
+    private WebElement submitAuthorizationButton;
+
+    By submitAuthorizationButtonLocator = By.xpath("//div[@class='style_actions__2mIsz']/button");
+
+    WebDriverWait wait;
+
     public LandingPage(WebDriver driver) {
+
+
+        wait = new WebDriverWait(driver, timeOutInSeconds);
         this.driver = driver;
+
         PageFactory.initElements(driver, this);
     }
 
     public <GenericPage> GenericPage login(String userEmail, String userPassword) {
-        waitUntilElementIsWisible(userLoginField, 3);
+        waitUntilElementIsVisible(userLoginField, timeOutInSeconds);
         userLoginField.sendKeys(userEmail);
         userPasswordField.sendKeys(userPassword);
         enterButton.click();
-        // waitUntilElementIsClickable(myAccauntButton, 5); /* not working, just sleep works */
-//        new WebDriverWait(driver, 7).until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete")); /* This also not working */
-
-        try {
-            Thread.sleep(7_000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
         return (GenericPage) new LandingPage(driver);
 
+    }
+
+    public LandingPage waitForSubmitAuthorizationButtonDisappear() {
+        try {
+            wait.until(ExpectedConditions.numberOfElementsToBe(submitAuthorizationButtonLocator, 0));
+            return new LandingPage(driver);
+        } catch (NoSuchElementException e) {
+            throw new NoSuchElementException("'Submit Authorization' Button was not found");
+        }
     }
 
     public boolean isPageLoaded() {

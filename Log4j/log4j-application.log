@@ -90,3 +90,7 @@ As with any other object, you can create String objects by using the new key
 2021-12-09 01:08:37 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_09_12_01_08_37.avi
 2021-12-09 01:08:37 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
 2021-12-09 01:08:37 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-14 00:47:18 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-14 00:47:28 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_14_12_00_47_28.avi
+2021-12-14 00:47:28 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-14 00:47:28 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test

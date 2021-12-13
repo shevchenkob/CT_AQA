@@ -7,7 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductsPage extends BaseTest {
+public class ProductsPage extends BasePage {
 
     @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/page:2/']")
     private WebElement page2Button;

@@ -29,6 +29,7 @@ public class LoginTest extends BaseTest {
         LandingPage landingPage = new LandingPage(driver);
         Assert.assertTrue(landingPage.isPageLoaded(), "Page https://www.21vek.by/ is not loaded.");
         landingPage.login(userEmail, userPassword);
+        landingPage.waitForSubmitAuthorizationButtonDisappear();
         Assert.assertTrue(landingPage.isLoginSuccessfull(), "Login to https://www.21vek.by/ not successful");
 
     }

@@ -1,12 +1,11 @@
 package com.customertimes.Pages;
 
-import com.customertimes.Tests.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class HeaderPage extends BaseTest {
+public class HeaderPage extends BasePage {
 
     @FindBy(xpath = "//button[@class='styles_userToolsToggler__imcSl']")
     private WebElement myAccauntButton;
@@ -24,18 +23,18 @@ public class HeaderPage extends BaseTest {
     }
 
     public <GenericPage> GenericPage preLogin() {
-        waitUntilElementIsWisible(myAccauntButton, 3);
+        waitUntilElementIsVisible(myAccauntButton, timeOutInSeconds);
         myAccauntButton.click();
-        waitUntilElementIsWisible(toEnterButton, 3);
+        waitUntilElementIsVisible(toEnterButton, timeOutInSeconds);
         toEnterButton.click();
 
         return (GenericPage) new LandingPage(driver);
     }
 
     public <GenericPage> GenericPage preOrder() {
-        waitUntilElementIsWisible(myAccauntButton, 3);
+        waitUntilElementIsVisible(myAccauntButton, 3);
         fridgesButton.click();
-        waitUntilElementIsWisible(myAccauntButton, 5);
+        waitUntilElementIsVisible(myAccauntButton, 5);
 
         return (GenericPage) new ProductsPage(driver);
     }
