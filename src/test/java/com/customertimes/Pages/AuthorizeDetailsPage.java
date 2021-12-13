@@ -60,7 +60,7 @@ public class AuthorizeDetailsPage extends BasePage {
     }
 
     public boolean isLoginSuccessfull() {
-        waitUntilElementIsClickable(exitButton, 5);
+        waitUntilElementIsClickable(exitButton, timeOutInSeconds);
         return exitButton.isDisplayed();
     }
 }

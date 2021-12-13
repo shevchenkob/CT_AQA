@@ -28,9 +28,9 @@ public class OneProductPage extends BasePage {
 
     public <GenericPage> GenericPage buyFridge() {
         buyButton.click();
-        waitUntilElementIsVisible(inBasket, 3);
+        waitUntilElementIsVisible(inBasket, timeOutInSeconds);
         basketHeader.click();
-        waitUntilElementIsVisible(createOrder, 3);
+        waitUntilElementIsVisible(createOrder, timeOutInSeconds);
         createOrder.click();
         return (GenericPage) new OneProductPage(driver);
     }

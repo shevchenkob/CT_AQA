@@ -32,15 +32,15 @@ public class HeaderPage extends BasePage {
     }
 
     public <GenericPage> GenericPage beforeIsLoginSuccessfulAction() {
-        waitUntilElementIsClickable(myAccauntButton, 5);
+        waitUntilElementIsClickable(myAccauntButton, timeOutInSeconds);
         myAccauntButton.click();
         return (GenericPage) new AuthorizeDetailsPage(driver);
     }
 
     public <GenericPage> GenericPage preOrder() {
-        waitUntilElementIsVisible(myAccauntButton, 3);
+        waitUntilElementIsVisible(myAccauntButton, timeOutInSeconds);
         fridgesButton.click();
-        waitUntilElementIsVisible(myAccauntButton, 5);
+        waitUntilElementIsVisible(myAccauntButton, timeOutInSeconds);
 
         return (GenericPage) new ProductsPage(driver);
     }

@@ -28,9 +28,9 @@ public class ProductsPage extends BasePage {
         Actions actions = new Actions(driver);
         actions.moveToElement(page2Button);
         actions.perform();
-        waitUntilElementIsClickable(page2Button, 5);
+        waitUntilElementIsClickable(page2Button, timeOutInSeconds);
         page2Button.click();
-        waitUntilElementIsClickable(sumsungFridgeButton, 5);
+        waitUntilElementIsClickable(sumsungFridgeButton, timeOutInSeconds);
 
         return (GenericPage) new ProductsPage(driver);
     }

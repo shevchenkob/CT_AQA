@@ -30,7 +30,6 @@ public class LoginTest extends BaseTest {
         authorizeDetailsPage.waitForSubmitAuthorizationButtonDisappear();
         headerPage.beforeIsLoginSuccessfulAction();
         Assert.assertTrue(authorizeDetailsPage.isLoginSuccessfull(), "Login to https://www.21vek.by/ not successful");
-
     }
 
 }
