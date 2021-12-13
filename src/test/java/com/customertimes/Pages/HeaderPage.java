@@ -28,7 +28,13 @@ public class HeaderPage extends BasePage {
         waitUntilElementIsVisible(toEnterButton, timeOutInSeconds);
         toEnterButton.click();
 
-        return (GenericPage) new LandingPage(driver);
+        return (GenericPage) new AuthorizeDetailsPage(driver);
+    }
+
+    public <GenericPage> GenericPage beforeIsLoginSuccessfulAction() {
+        waitUntilElementIsClickable(myAccauntButton, 5);
+        myAccauntButton.click();
+        return (GenericPage) new AuthorizeDetailsPage(driver);
     }
 
     public <GenericPage> GenericPage preOrder() {

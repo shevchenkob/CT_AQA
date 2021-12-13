@@ -6,10 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LandingPage extends BasePage {
-
-    @FindBy(xpath = "//button[@class='styles_userToolsToggler__imcSl']")
-    private WebElement myAccauntButton;
+public class AuthorizeDetailsPage extends BasePage {
 
     @FindBy(xpath = "//button[@class='userToolsBtn']")
     private WebElement toEnterButton;
@@ -19,9 +16,6 @@ public class LandingPage extends BasePage {
 
     @FindBy(xpath = "//input[@name='password']")
     private WebElement userPasswordField;
-
-    @FindBy(xpath = "//span[@class='lt-label-block__txt']")
-    private WebElement writeUsBorder;
 
     @FindBy(xpath = "//button[@class='styles_reactButton__2olKd style_baseActionButton__2LQYJ styles_submitButton__lmwVK']")
     private WebElement enterButton;
@@ -36,12 +30,9 @@ public class LandingPage extends BasePage {
 
     WebDriverWait wait;
 
-    public LandingPage(WebDriver driver) {
-
-
+    public AuthorizeDetailsPage(WebDriver driver) {
         wait = new WebDriverWait(driver, timeOutInSeconds);
         this.driver = driver;
-
         PageFactory.initElements(driver, this);
     }
 
@@ -50,14 +41,14 @@ public class LandingPage extends BasePage {
         userLoginField.sendKeys(userEmail);
         userPasswordField.sendKeys(userPassword);
         enterButton.click();
-        return (GenericPage) new LandingPage(driver);
+        return (GenericPage) new AuthorizeDetailsPage(driver);
 
     }
 
-    public LandingPage waitForSubmitAuthorizationButtonDisappear() {
+    public AuthorizeDetailsPage waitForSubmitAuthorizationButtonDisappear() {
         try {
             wait.until(ExpectedConditions.numberOfElementsToBe(submitAuthorizationButtonLocator, 0));
-            return new LandingPage(driver);
+            return new AuthorizeDetailsPage(driver);
         } catch (NoSuchElementException e) {
             throw new NoSuchElementException("'Submit Authorization' Button was not found");
         }
@@ -69,8 +60,6 @@ public class LandingPage extends BasePage {
     }
 
     public boolean isLoginSuccessfull() {
-        waitUntilElementIsClickable(myAccauntButton, 5);
-        myAccauntButton.click();
         waitUntilElementIsClickable(exitButton, 5);
         return exitButton.isDisplayed();
     }

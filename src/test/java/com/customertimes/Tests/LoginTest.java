@@ -3,9 +3,7 @@ package com.customertimes.Tests;
 import com.automation.remarks.testng.UniversalVideoListener;
 import com.automation.remarks.video.annotations.Video;
 import com.customertimes.Pages.HeaderPage;
-import com.customertimes.Pages.LandingPage;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import com.customertimes.Pages.AuthorizeDetailsPage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
@@ -26,11 +24,12 @@ public class LoginTest extends BaseTest {
     public void successfulLoginTest(String userEmail, String userPassword) {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage.preLogin();
-        LandingPage landingPage = new LandingPage(driver);
-        Assert.assertTrue(landingPage.isPageLoaded(), "Page https://www.21vek.by/ is not loaded.");
-        landingPage.login(userEmail, userPassword);
-        landingPage.waitForSubmitAuthorizationButtonDisappear();
-        Assert.assertTrue(landingPage.isLoginSuccessfull(), "Login to https://www.21vek.by/ not successful");
+        AuthorizeDetailsPage authorizeDetailsPage = new AuthorizeDetailsPage(driver);
+        Assert.assertTrue(authorizeDetailsPage.isPageLoaded(), "Page https://www.21vek.by/ is not loaded.");
+        authorizeDetailsPage.login(userEmail, userPassword);
+        authorizeDetailsPage.waitForSubmitAuthorizationButtonDisappear();
+        headerPage.beforeIsLoginSuccessfulAction();
+        Assert.assertTrue(authorizeDetailsPage.isLoginSuccessfull(), "Login to https://www.21vek.by/ not successful");
 
     }
 
