@@ -292,3 +292,7 @@ As with any other object, you can create String objects by using the new key
 2021-12-14 23:45:39 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_14_12_23_45_39.avi
 2021-12-14 23:45:39 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
 2021-12-14 23:45:39 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-15 00:49:19 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-15 00:49:30 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_15_12_00_49_30.avi
+2021-12-15 00:49:30 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-15 00:49:30 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
