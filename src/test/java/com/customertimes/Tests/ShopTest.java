@@ -25,12 +25,12 @@ public class ShopTest extends BaseTest {
         headerPage.preOrder();
         ProductsPage productsPage = new ProductsPage(driver);
         productsPage.navigateToSecondPage();
-        Assert.assertTrue(productsPage.isPageLoaded(), "Second page not loaded");
+        Assert.assertTrue(productsPage.isPageLoaded(), "Second page not loaded.");
         productsPage.shopFridge();
         OneProductPage oneProductPage = new OneProductPage(driver);
         File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("c:\\tmp\\screenshot.png"));
-        Assert.assertTrue(oneProductPage.isPageLoaded()); /* Here should be assert false to record video */
+        Assert.assertTrue(oneProductPage.isPageLoaded(), "One fridge page not loaded."); /* Here should be assert false to record video */
         oneProductPage.buyFridge();
 
 
