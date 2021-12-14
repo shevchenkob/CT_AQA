@@ -19,7 +19,6 @@ public class LoginTest extends BaseTest {
         };
     }
 
-
     @Test(dataProvider = "ValidData", priority = 1)
     @Video
     public void successfulLoginTest(String userEmail, String userPassword) {

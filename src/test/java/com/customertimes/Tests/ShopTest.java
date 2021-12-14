@@ -20,7 +20,7 @@ public class ShopTest extends BaseTest {
 
     @Test(priority = 1)
     @Video
-    public void successfulLoginTest() throws IOException {
+    public void successfulShopTest() throws IOException {
         HeaderPage headerPage = new HeaderPage(driver);
         headerPage.preOrder();
         ProductsPage productsPage = new ProductsPage(driver);

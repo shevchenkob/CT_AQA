@@ -10,7 +10,10 @@ public class OneProductPage extends BasePage {
     @FindBy(xpath = "//button[@data-ga_action='add_to_cart']")
     private WebElement buyButton;
 
-    @FindBy(xpath = "//a[@class='j-button-clicked g-basketbtn']")
+    //@FindBy(xpath = "//a[@class='j-button-clicked g-basketbtn']")
+   // private WebElement inBasket;
+
+    @FindBy(xpath = "//a[@class='g-basketbtn']")
     private WebElement inBasket;
 
     @FindBy(xpath = "//a[@class='headerCartBox']")

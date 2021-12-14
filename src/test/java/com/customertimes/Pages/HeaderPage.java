@@ -16,7 +16,6 @@ public class HeaderPage extends BasePage {
     @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/']")
     private WebElement fridgesButton;
 
-
     public HeaderPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
