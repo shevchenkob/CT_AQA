@@ -14,12 +14,6 @@ public class ProductsPage extends BasePage {
     @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/atlant_4423080n.html']")
     private WebElement fridgeButton;
 
-//    @FindBy(xpath = "//span[@name='2']")
-//    private WebElement selectedPageTwoButton;
-
-
-
-
     public ProductsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -42,6 +36,5 @@ public class ProductsPage extends BasePage {
 
     public boolean isPageLoaded() {
         return driver.getCurrentUrl().equals("https://www.21vek.by/refrigerators/page:2/");
-       // return selectedPageTwoButton.isDisplayed();
     }
 }
