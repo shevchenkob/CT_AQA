@@ -1,23 +1,27 @@
 package com.customertimes.Tests;
 
+import com.customertimes.framework.driver.TestConfig;
 import com.customertimes.framework.driver.WebDriverRunner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import static com.customertimes.framework.driver.WebDriverRunner.getWebDriver;
+
 public class BaseTest {
     public WebDriver driver;
-    WebDriverWait wait;
+    protected String email = TestConfig.CONFIG.email();
+    protected String password = TestConfig.CONFIG.password();
 
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void beforeSuit() {
         System.out.println("Test started");
-        driver = WebDriverRunner.getWebDriver();
+       driver = WebDriverRunner.getWebDriver();
         driver.get("https://www.21vek.by/");
     }
 
-    @AfterSuite
+    @AfterSuite(alwaysRun = true)
     public void afterSuit() {
         System.out.println("Test finished");
         WebDriverRunner.closeWebDriver();

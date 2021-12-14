@@ -9,5 +9,6 @@ TestConfig CONFIG = ConfigFactory.create(TestConfig.class);
 
 @DefaultValue("chrome")
     String browser();
-
+    String email();
+    String password();
 }

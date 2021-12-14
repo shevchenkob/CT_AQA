@@ -1,15 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" configfailurepolicy="continue" thread-count="1" >
+<suite name="Suite1" verbose="1" configfailurepolicy="continue" thread-count="2" >
     <test name="Regression" parallel = "methods" thread-count = "2">
         <classes>
-            <class name = "com.customertimes.OldTests.RegistrTest" />
+            <class name = "com.customertimes.Tests.LoginTest" />
+            <class name = "com.customertimes.Tests.ShopTest" />
         </classes>
-
-
         <packages>
-            <package name="com.customertimes.*">
-                <exclude name="com.customertimes.test.*"></exclude>
+            <package name="com.customertimes.test.*">
             </package>
         </packages>
     </test>
