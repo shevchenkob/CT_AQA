@@ -20,7 +20,6 @@ public class OneProductPage extends BasePage {
     private WebElement createOrder;
 
 
-
     public OneProductPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

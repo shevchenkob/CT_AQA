@@ -3,11 +3,8 @@ package com.customertimes.Tests;
 import com.customertimes.framework.driver.TestConfig;
 import com.customertimes.framework.driver.WebDriverRunner;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
-
-import static com.customertimes.framework.driver.WebDriverRunner.getWebDriver;
 
 public class BaseTest {
     public WebDriver driver;

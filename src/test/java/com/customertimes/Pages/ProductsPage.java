@@ -1,6 +1,5 @@
 package com.customertimes.Pages;
 
-import com.customertimes.Tests.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
