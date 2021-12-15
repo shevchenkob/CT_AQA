@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class AuthorizeDetailsPage extends BasePage {
+public class LoginPage extends BasePage {
 
     @FindBy(xpath = "//button[@class='userToolsBtn']")
     private WebElement toEnterButton;
@@ -30,25 +30,25 @@ public class AuthorizeDetailsPage extends BasePage {
 
     WebDriverWait wait;
 
-    public AuthorizeDetailsPage(WebDriver driver) {
+    public LoginPage(WebDriver driver) {
         wait = new WebDriverWait(driver, timeOutInSeconds);
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public <GenericPage> GenericPage login(String userEmail, String userPassword) {
+    public LoginPage login(String userEmail, String userPassword) {
         waitUntilElementIsVisible(userLoginField, timeOutInSeconds);
         userLoginField.sendKeys(userEmail);
         userPasswordField.sendKeys(userPassword);
         enterButton.click();
-        return (GenericPage) new AuthorizeDetailsPage(driver);
+        return this;
 
     }
 
-    public AuthorizeDetailsPage waitForSubmitAuthorizationButtonDisappear() {
+    public LoginPage waitForSubmitAuthorizationButtonDisappear() {
         try {
             wait.until(ExpectedConditions.numberOfElementsToBe(submitAuthorizationButtonLocator, 0));
-            return new AuthorizeDetailsPage(driver);
+            return new LoginPage(driver);
         } catch (NoSuchElementException e) {
             throw new NoSuchElementException("'Submit Authorization' Button was not found");
         }

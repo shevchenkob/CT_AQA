@@ -11,7 +11,7 @@ public class HeaderPage extends BasePage {
     private WebElement myAccauntButton;
 
     @FindBy(xpath = "//button[@class='userToolsBtn']")
-    private WebElement toEnterButton;
+    private WebElement enterButton;
 
     @FindBy(xpath = "//a[@href='https://www.21vek.by/refrigerators/']")
     private WebElement fridgesButton;
@@ -21,26 +21,26 @@ public class HeaderPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public <GenericPage> GenericPage preLogin() {
+    public LoginPage openLoginForm() {
         waitUntilElementIsVisible(myAccauntButton, timeOutInSeconds);
         myAccauntButton.click();
-        waitUntilElementIsVisible(toEnterButton, timeOutInSeconds);
-        toEnterButton.click();
+        waitUntilElementIsVisible(enterButton, timeOutInSeconds);
+        enterButton.click();
 
-        return (GenericPage) new AuthorizeDetailsPage(driver);
+        return new LoginPage(driver);
     }
 
-    public <GenericPage> GenericPage beforeIsLoginSuccessfulAction() {
+    public HeaderPage beforeIsLoginSuccessfulAction() {
         waitUntilElementIsClickable(myAccauntButton, timeOutInSeconds);
         myAccauntButton.click();
-        return (GenericPage) new AuthorizeDetailsPage(driver);
+        return this;
     }
 
-    public <GenericPage> GenericPage preOrder() {
+    public ProductsPage startOrder() {
         waitUntilElementIsVisible(myAccauntButton, timeOutInSeconds);
         fridgesButton.click();
         waitUntilElementIsVisible(myAccauntButton, timeOutInSeconds);
 
-        return (GenericPage) new ProductsPage(driver);
+        return  new ProductsPage(driver);
     }
 }

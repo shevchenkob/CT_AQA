@@ -19,19 +19,19 @@ public class ProductsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public <GenericPage> GenericPage navigateToSecondPage() {
+    public ProductsPage navigateToSecondPage() {
         Actions actions = new Actions(driver);
         actions.moveToElement(page2Button);
         actions.perform();
         waitUntilElementIsClickable(page2Button, timeOutInSeconds);
         page2Button.click();
         waitUntilElementIsClickable(fridgeButton, timeOutInSeconds);
-        return (GenericPage) new ProductsPage(driver);
+        return this;
     }
 
-    public <GenericPage> GenericPage shopFridge() {
+    public OneProductPage shopFridge() {
         fridgeButton.click();
-        return (GenericPage) new OneProductPage(driver);
+        return new OneProductPage(driver);
     }
 
     public boolean isPageLoaded() {
