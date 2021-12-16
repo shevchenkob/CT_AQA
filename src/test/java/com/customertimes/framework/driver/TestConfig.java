@@ -11,4 +11,5 @@ TestConfig CONFIG = ConfigFactory.create(TestConfig.class);
     String browser();
     String email();
     String password();
+    String baseUrl();
 }

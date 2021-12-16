@@ -20,8 +20,9 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[@class='styles_reactButton__2olKd style_baseActionButton__2LQYJ styles_submitButton__lmwVK']")
     private WebElement enterButton;
 
-    @FindBy(xpath = "//div[@class='ProfileItem_itemText__Qz7I0']")
-    private WebElement exitButton;
+    @FindBy(xpath = "//span[@class='userToolsSubtitle']")
+    private WebElement userNameForm;
+
 
     @FindBy(xpath = "//div[@class='style_actions__2mIsz']/button")
     private WebElement submitAuthorizationButton;
@@ -60,7 +61,7 @@ public class LoginPage extends BasePage {
     }
 
     public boolean isLoginSuccessfull() {
-        waitUntilElementIsClickable(exitButton, timeOutInSeconds);
-        return exitButton.isDisplayed();
+        waitUntilElementIsClickable(userNameForm, timeOutInSeconds);
+        return userNameForm.isDisplayed();
     }
 }

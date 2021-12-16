@@ -312,3 +312,20 @@ As with any other object, you can create String objects by using the new key
 2021-12-15 17:04:28 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_15_12_17_04_28.avi
 2021-12-15 17:04:28 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
 2021-12-15 17:04:28 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_15_12_17_04_28.avi
+2021-12-16 01:24:40 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-16 01:24:45 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_16_12_01_24_45.avi
+2021-12-16 01:24:45 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-16 01:24:45 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-16 01:28:33 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-16 01:28:38 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_16_12_01_28_38.avi
+2021-12-16 01:28:38 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-16 01:28:38 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-16 01:55:58 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-16 01:56:14 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_16_12_01_56_14.avi
+2021-12-16 01:56:14 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-16 01:56:14 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-16 01:59:23 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-16 02:03:57 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-16 02:04:13 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_16_12_02_04_13.avi
+2021-12-16 02:04:13 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-16 02:04:13 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
