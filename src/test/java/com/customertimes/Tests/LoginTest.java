@@ -14,6 +14,7 @@ public class LoginTest extends BaseTest {
 
     private String baseUrl = "https://www.21vek.by/";
 
+
     @DataProvider
     public Object[][] ValidData() {
         return new Object[][]{

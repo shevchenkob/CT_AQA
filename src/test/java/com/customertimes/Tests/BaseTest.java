@@ -43,4 +43,8 @@ public class BaseTest {
         }
     }
 
+    protected WebDriver getDriver(){
+        return WebDriverRunner.getWebDriver();
+    }
+
 }

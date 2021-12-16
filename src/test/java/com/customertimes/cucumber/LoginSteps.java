@@ -29,7 +29,7 @@ public class LoginSteps extends BaseTest {
 
     }
 
-    @And("User click on login button")
+    @Then("User click on login button")
     public void clickOnLogin (){
         loginPage.waitForSubmitAuthorizationButtonDisappear();
     }

@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         monochrome = true,
         tags = "smoke",
         glue = {"LoginToShop"},
-        features = "src/test/java/io/customertimes/features/LoginToShop.feature"
+        features = "src/test/resources/cucumber.feature"
 )
 public class CucumberBaseTest extends AbstractTestNGCucumberTests {
 
