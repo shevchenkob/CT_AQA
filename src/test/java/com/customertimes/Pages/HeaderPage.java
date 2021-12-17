@@ -27,6 +27,7 @@ public class HeaderPage extends BasePage {
         waitUntilElementIsVisible(enterButton, timeOutInSeconds);
         enterButton.click();
 
+
         return new LoginPage(driver);
     }
 

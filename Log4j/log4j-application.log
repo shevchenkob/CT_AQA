@@ -329,3 +329,70 @@ As with any other object, you can create String objects by using the new key
 2021-12-16 02:04:13 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_16_12_02_04_13.avi
 2021-12-16 02:04:13 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
 2021-12-16 02:04:13 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-17 02:02:56 [main] INFO  com.customertimes.Lesson11.MyLogger:27  - Average of max and min number: 50
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:12  - I am static.
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:16  - I am not static.
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public static void com.customertimes.Lesson3.StaticNoStatic.main(java.lang.String[])
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public void com.customertimes.Lesson3.StaticNoStatic.notStatic()
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public final void java.lang.Object.wait() throws java.lang.InterruptedException
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public boolean java.lang.Object.equals(java.lang.Object)
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public java.lang.String java.lang.Object.toString()
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public native int java.lang.Object.hashCode()
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public final native java.lang.Class java.lang.Object.getClass()
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public final native void java.lang.Object.notify()
+2021-12-17 02:07:27 [main] INFO  com.customertimes.Lesson11.MyLogger:26  - public final native void java.lang.Object.notifyAll()
+2021-12-17 16:37:50 [TestNG-test=Regression-1] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_16_37_50.avi
+2021-12-17 16:37:50 [TestNG-test=Regression-2] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_17_12_16_37_50.avi
+2021-12-17 16:37:50 [TestNG-test=Regression-1] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 16:37:50 [TestNG-test=Regression-2] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 16:37:50 [TestNG-test=Regression-1] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_16_37_50.avi
+2021-12-17 16:37:50 [TestNG-test=Regression-2] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_17_12_16_37_50.avi
+2021-12-17 17:04:03 [TestNG-test=Regression-2] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_17_12_17_04_03.avi
+2021-12-17 17:04:03 [TestNG-test=Regression-2] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:04:03 [TestNG-test=Regression-2] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_17_12_17_04_03.avi
+2021-12-17 17:04:03 [TestNG-test=Regression-1] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:04:08 [TestNG-test=Regression-1] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_04_08.avi
+2021-12-17 17:04:08 [TestNG-test=Regression-1] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:04:08 [TestNG-test=Regression-1] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_04_08.avi
+2021-12-17 17:05:53 [TestNG-test=Regression-1] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:05:53 [TestNG-test=Regression-2] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:05:53 [TestNG-test=Regression-2] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_17_12_17_05_53.avi
+2021-12-17 17:05:53 [TestNG-test=Regression-2] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:05:53 [TestNG-test=Regression-2] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulShopTest_recording_2021_17_12_17_05_53.avi
+2021-12-17 17:05:57 [TestNG-test=Regression-1] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_05_57.avi
+2021-12-17 17:05:57 [TestNG-test=Regression-1] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:05:57 [TestNG-test=Regression-1] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_05_57.avi
+2021-12-17 17:07:19 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:07:23 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_07_23.avi
+2021-12-17 17:07:23 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:07:23 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_07_23.avi
+2021-12-17 17:08:12 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:08:16 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_08_16.avi
+2021-12-17 17:08:16 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:08:16 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_08_16.avi
+2021-12-17 17:11:01 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:11:06 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_11_06.avi
+2021-12-17 17:11:06 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:11:06 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_11_06.avi
+2021-12-17 17:14:28 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:14:32 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_14_32.avi
+2021-12-17 17:14:32 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:14:32 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_14_32.avi
+2021-12-17 17:15:25 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:15:29 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_15_29.avi
+2021-12-17 17:15:29 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:15:29 [main] INFO  com.automation.remarks.video.RecordingUtils:26  - Video recording: C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_15_29.avi
+2021-12-17 17:17:41 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:17:59 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_17_59.avi
+2021-12-17 17:17:59 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:17:59 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-17 17:19:00 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:19:16 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_19_16.avi
+2021-12-17 17:19:16 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:19:16 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
+2021-12-17 17:20:21 [main] INFO  remarks.video.recorder.monte.MonteRecorder:39  - Recording started
+2021-12-17 17:20:37 [main] INFO  remarks.video.recorder.monte.MonteRecorder:45  - Recording finished to C:\Users\Bogdan Shevchenko\IdeaProjects\CT_AQA\video\successfulLoginTest_recording_2021_17_12_17_20_37.avi
+2021-12-17 17:20:37 [main] INFO  com.automation.remarks.video.RecordingUtils:81  - No jenkinsUrl variable found.
+2021-12-17 17:20:37 [main] INFO  com.automation.remarks.video.RecordingUtils:33  - No video on success test
