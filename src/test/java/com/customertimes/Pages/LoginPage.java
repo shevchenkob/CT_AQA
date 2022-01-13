@@ -37,6 +37,7 @@ public class LoginPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
+
     public LoginPage login(String userEmail, String userPassword) {
         waitUntilElementIsVisible(userLoginField, timeOutInSeconds);
         userLoginField.sendKeys(userEmail);
