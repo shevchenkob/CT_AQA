@@ -24,6 +24,7 @@ public class LoginPage extends BasePage {
     private WebElement userNameForm;
 
 
+
     @FindBy(xpath = "//div[@class='style_actions__2mIsz']/button")
     private WebElement submitAuthorizationButton;
 
